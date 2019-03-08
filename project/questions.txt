@@ -1,0 +1,36 @@
+1) How I was trying to implement my solution, was by first reading in the logic addres 
+into a list and storing it that way. Then bit masking the bits to pull the offset and the page number out of it
+Next I was going to check to see if there was a tlb hit and a page fault using the function declarations in tlb.c and tlb.h.
+Next, the address was going to be read in and stored into a physical address but I was not able to get my code to compile.
+I feel like I was extremely close but am just missing that one thing that I need.
+
+2) I implemented the page table using an array of frams. If the frame is null, then it was supposed say that spot in the page table was empty.
+To access the table, I was using a page number as the index. the tlb is an array of size TLB_SIZE, to acces a frame from the tlb. The phyiscal memory was an array of bytes.
+
+3) no because I was not able to get it  to run. Like i said earlier, I was on the right track but was just missing that one crucial step that would of let me figure it out.
+
+4) Yes
+
+5) I was going to allow the user to say which operation they wanted to perform.
+
+11.2
+1) I feel like my soultion was relatively general as I was using the notes that you gave us in class to help me through it.
+
+2) In order to change the parameters, all I would have to do is to modify them in system.c
+
+3) I was trying to implement a system like that to where it wouldnt slow down the processing time but when it was needed, it would be there.
+
+4) Yes, my solution did allow for the address space to be smaller
+
+11.3
+1) Yes and know, again since I was still trying to get it to compile, I had a lot of issues and comments everywhere that I tried to clean up.
+
+2) I chose to put the system but its self using the Sys structure in system.h. When I was working on it, it allowed it to be easier to read in my opinion.
+
+3) Yes, I cited my sources in the comments above the functions!
+
+Last note: I just wanted to say, that this project was actually a blast! Like at first I really did not like it but once I got going with it, I went non stop (even forgot to sleep one night).
+But I believe that one of the reasons that I wasnt able to get it working was truly the complexity of how many different parts there were. (I know I know that sounds silly but hear me out).
+Every time I got to what I thought was close with finishing this project, something would always end up messing up or I realized i forgot something. Then i'd go back and edit it and then two more things would be messed it.
+It was just a game of cat and mouse which I enjoyed but it ended up beating me. The parts that are incomplete with this project was since I was never able to finish my display file which meant I couldnt  get around to making a main function, I was never able to 
+make a makefile like you wanted. The other issue was, it took me quite a while to figure out the page_fault_handler that I had to slow my progress and really try to get a good grasp of it.

@@ -1,0 +1,80 @@
+Script started on Fri 31 Aug 2018 11:01:30 AM CDT
+bash-4.2$ vi commands2.script[C[C[C[C[C[C[C[C[C[Cls[Kscript commands2.script[C[C[C[C[C[C[C[C[C[Cls[Kmore /proc/cpuinfo > cpuinfo.txt[C[C[C[C[C[C[C[C[C[Cls[Kmore /proc/cpuinfo > cpuinfo.txt[C[C[C[C[C[C[C[C[C[Cls[Kscript commands2.script[C[C[C[C[C[C[C[C[C[Cls[Kvi commands2.script[C[C[C[C[C[C[C[C[C[C[Kvi commands2.script[C[C[C[C[C[C[C[C[C[Cls[Kscript commands2.script[C[C[C[C[C[C[C[C[C[Cls[Kmore /proc/cpuinfo > cpuinfo.txt[C[C[C[C[C[C[C[C[C[Cls[Kmore /proc/cpuinfo #ls > cpuinfo.txt[C[C[C[C[C[C[C[C[C[Cgit status[Kclone https://github.com/comp3500/comp3500[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgttps://github.com/comp3500/comp3500 [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chttps://github.com/comp3500/comp3500 myComp3500[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgttps://github.com/comp3500/comp3500 [K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chttps://github.com/comp3500/comp3500[K[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[Kmore /proc/cpuinfo #ls > cpuinfo.txt[C[C[C[C[C[C[C[C[C[Cls[Kmore /proc/cpuinfo > cpuinfo.txt[C[C[C[C[C[C[C[C[C[Cls[Kscript commands2.script[C[C[C[C[C[C[C[C[C[Cls[Kvi commands2.script[C[C[C[C[C[C[C[C[C[C[Kgdb -q -iex "set auto-load safe -[K[Kpath[K[K[K[K-path/home/us[K2/ajh0067/comp3500/ .gdbinit" ./simple
+Reading symbols from /home/u2/ajh0067/comp3500/simple...done.
+warning: File "/home/u2/ajh0067/comp3500/.gdbinit" auto-loading has been declined by your `auto-load safe-path' set to "/home/u2/ajh0067/comp3500/ .gdbinit".
+To enable execution of this file add
+	add-auto-load-safe-path /home/u2/ajh0067/comp3500/.gdbinit
+line to your configuration file "/home/u2/ajh0067/.gdbinit".
+To completely disable this security protection add
+	set auto-load safe-path /
+line to your configuration file "/home/u2/ajh0067/.gdbinit".
+For more information about this security protection see the
+"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:
+	info "(gdb)Auto-loading safe path"
+(gdb) 
+(gdb) r
+Starting program: /home/u2/ajh0067/comp3500/./simple 
+Average is equal to: 5.800000 
+[Inferior 1 (process 9212) exited normally]
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-222.el7.x86_64
+(gdb) n
+The program is not being run.
+(gdb) gdb
+Undefined command: "gdb".  Try "help".
+(gdb) s
+The program is not being run.
+(gdb) c
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) 
+The program is not being run.
+(gdb) q
+bash-4.2$ gdb -q -iex "set auto-load safe-path/home/u2/ajh0067/comp3500/ .gdbinit" ./simple[C[C[C[C[C[C[C[C[C[Cvi commands2.script[K[C[C[C[C[C[C[C[C[C[Cgdb -q -iex "set auto-load safe-path/home/u2/ajh0067/comp3500/ .gdbinit" ./simple.gdbinit" ./simple[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Reading symbols from /home/u2/ajh0067/comp3500/simple...done.
+Breakpoint 1 at 0x400595: file simple.c, line 8.
+Breakpoint 2 at 0x400480
+.gdbinit:4: Error in sourced command file:
+The program has no registers now.
+(gdb) r
+Starting program: /home/u2/ajh0067/comp3500/simple 
+
+Breakpoint 1, main () at simple.c:8
+8	int num[] = {4, 4, 16, 25, 25, 49, 36, 64, 81, 100};
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-222.el7.x86_64
+(gdb) n
+9	int i = 0;
+(gdb) s
+12	for (i; i <= 10; i++){
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00007ffff7aff6b0 in sqrt () from /lib64/libm.so.6
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00007ffff7aff6b0 in sqrt () from /lib64/libm.so.6
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00007ffff7aff6b0 in sqrt () from /lib64/libm.so.6
+(gdb) r
+The program being debugged has been started already.
+Start it from the beginning? (y or n) n
+Program not restarted.
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x00007ffff7aff6b0 in sqrt () from /lib64/libm.so.6
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 9284] will be killed.
+
+Quit anyway? (y or n) y
+bash-4.2$ exit
+exit
+
+Script done on Fri 31 Aug 2018 11:04:29 AM CDT

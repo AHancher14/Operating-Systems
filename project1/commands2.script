@@ -1,0 +1,9 @@
+Script started on Thu 30 Aug 2018 06:22:25 PM CDT
+bash-4.2$ ./simplegcc -g -lm -o simple simple.c[C[C[C[C[C[C[C[C[C[Cvi simple.c[Kgcc -g -lm -o simple simple.c[C[C[C[C[C[C[C[C[C[Cvi simple.c[Kgcc -g -lm -o simple simple.c[C[C[C[C[C[C[C[C[C[Cvi simple.c[Kgcc -g -lm -o simple simple.c[C[C[C[C[C[C[C[C[C[C./simple[K[Kmore /proc/cpuinfo > cpuinfo.[K[Ko.txt
+bash-4.2$ more /proc/meminfo >mem[K[K[K meminfo.txt
+bash-4.2$ /sbin/lspci > lspci.txt
+bash-4.2$ more / proc[K[K[K[K[Kproc/interrupts > interrupts.txt
+bash-4.2$ exit
+exit
+
+Script done on Thu 30 Aug 2018 06:23:56 PM CtD

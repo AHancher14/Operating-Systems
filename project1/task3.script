@@ -1,0 +1,78 @@
+Script started on Fri 31 Aug 2018 11:30:22 AM CDT
+bash-4.2$ gcc -v
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper
+Target: x86_64-redhat-linux
+Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.5-20150702/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
+Thread model: posix
+gcc version 4.8.5 20150623 (Red Hat 4.8.5-28) (GCC) 
+bash-4.2$ gcc -vexit[Kcd ajh0067ls[Kcd comp3500ls[Kexitcd ajh0067ls[Kcd comp3500ls[Kwscd project1ls[Kmkdir project1[C[C[C[C[C[C[C[C[C[Cscript commands4.script[C[C[C[C[C[C[C[C[C[Cgit add *.c[Kscript commands3.script[C[C[C[C[C[C[C[C[C[Cgdb -q -iex "set auto-load safe-path/home/u2/ajh0067/comp3500/.gdbinit" ./simple[C[C[C[C[C[C[C[C[C[C[C[Cp -q -iex "set auto-load safe-path/home/u2/ajh0067/comp3500/.gdbinit" ./simple[C[C[C[C[C[C[C[C[C[C[C[Cb simple[Kls[Kcd comp3500ls[Kexitls[Kcd comp3500ls[Kgdb simplep -q -iex "set auto-load safe-path/home/u2/ajh0067/comp3500/.gdbinit" ./simple[C[C[C[C[C[C[C[C[C[C[C[Cb -q -iex "set auto-load safe-path/home/u2/ajh0067/comp3500/.gdbinit" ./simple[C[C[C[C[C[C[C[C[C[C[C[Cp -q -iex "set auto-load safe-path/home/u2/ajh0067/comp3500/.gdbinit" ./simple[C[C[C[C[C[C[C[C[C[C[C[Cb simple[Kls[Kcd comp3500ls[Kexitgit logdiffstatusti statusls[Kcd comp3500ls[Kcd ajh0067ls[Kcd comp3500..[Kgit diffclone https://github.com/libgit2/libgit2[C[C[C[C[C[C[C[C[C[Cmkdir temp[Kcd ..[Kgit commit -m "first git commit"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[Kadd *.cstatus[Kinit[Kexit[Kgdb -q -iex "set auto-load safe-path/home/u2/ajh0067/comp3500/.gdbinit" ./simple .gdbinit" ./simple[C[C[C[C[C[C[C[C[C[Cvi commands2.script[K[C[C[C[C[C[C[C[C[C[Cls[Kscript commands2.script[C[C[C[C[C[C[C[C[C[Cls[Kmore /proc/cpuinfo > cpuinfo.txt[C[C[C[C[C[C[C[C[C[Cls[Kmore /proc/cpuinfo #ls > cpuinfo.txt[C[C[C[C[C[C[C[C[C[Cgit status[Kclone https://github.com/comp3500/comp3500[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgttps://github.com/comp3500/comp3500 [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chttps://github.com/comp3500/comp3500 myComp3500[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgttps://github.com/comp3500/comp3500 [K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chttps://github.com/comp3500/comp3500 myComp3500[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgttps://github.com/comp3500/comp3500 myComp3500[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd *.c[K./simple[Kls[Kcd comp3500exit[Kmore /proc/interrupts > interrupts.txt[C[C[C[C[C[C[C[C[C[C/sbin/lspci > lspci.txt[K[C[C[C[C[C[C[C[C[C[Cmore /proc/meminfo > meminfo.txtcpuinfo > cpuinfo.txt[C[C[C[C[C[C[C[C[C[C./simple[Kgcc -g -lm -o simple simple.c[C[C[C[C[C[C[C[C[C[Cvi simple.c[Kgcc -g -lm -o simple simple.c[C[C[C[C[C[C[C[C[C[Cvi simple.c[Kgcc -g -lm -o simple simple.c[C[C[C[C[C[C[C[C[C[Cvi simple.c[Kgcc -g -lm -o simple simple.c
+bash-4.2$ man ldd
+[?1h=LDD(1)                              Linux Programmer's Manual                             LDD(1)[m
+[m
+[1mNAME[0m[m
+       ldd - print shared library dependencies[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mldd[0m [OPTION]... FILE...[m
+[m
+[1mDESCRIPTION[0m[m
+       [1mldd[0m  prints  the shared libraries required by each program or shared library specified on[m
+       the command line.[m
+[m
+   [1mSecurity[0m[m
+       In the usual case, [1mldd[0m invokes the  standard  dynamic  linker  (see  [1mld.so[0m(8))  with  the[m
+       [1mLD_TRACE_LOADED_OBJECTS[0m environment variable set to 1, which causes the linker to display[m
+       the library dependencies.  Be aware, however, that in some circumstances,  some  versions[m
+       of  [1mldd[0m  may  attempt to obtain the dependency information by directly executing the pro‐[m
+       gram.  Thus, you should [4mnever[m employ [1mldd[0m on  an  untrusted  executable,  since  this  may[m
+       result  in  the  execution  of  arbitrary  code.   A  safer alternative when dealing with[m
+       untrusted executables is:[m
+[m
+           $ objdump -p /path/to/program | grep NEEDED[m
+[m
+[1mOPTIONS[0m[m
+       [1m--version[0m[m
+              Print the version number of [1mldd[0m.[m
+[m
+       [1m-v[0m [1m--verbose[0m[m
+              Print all information, including, for example, symbol versioning information.[m
+[m
+       [1m-u[0m [1m--unused[0m[m
+              Print unused direct dependencies.  (Since glibc 2.3.4.)[m
+[m
+       [1m-d[0m [1m--data-relocs[0m[m
+              Perform relocations and report any missing objects (ELF only).[m
+[m
+       [1m-r[0m [1m--function-relocs[0m[m
+              Perform relocations for both data objects and functions, and  report  any  missing[m
+              objects or functions (ELF only).[m
+[m
+       [1m--help[0m Usage information.[m
+[m
+[1mNOTES[0m[m
+       The  standard  version of [1mldd[0m comes with glibc2.  Libc5 came with an older version, still[m
+       present on some systems.  The long options are not supported by the  libc5  version.   On[m
+       the other hand, the glibc2 version does not support [1m-V[0m and only has the equivalent [1m--ver‐[0m[m
+       [1msion[0m.[m
+[m
+       The libc5 version of this program will use the name of a library  given  on  the  command[m
+       line  as-is when it contains a '/'; otherwise it searches for the library in the standard[m
+       locations.  To run it on a shared library in the current directory, prefix the name  with[m
+       "./".[m
+[m
+[1mBUGS[0m[m
+       [1mldd[0m does not work on a.out shared libraries.[m
+[m
+[7m Manual page ldd(1) line 1 (press h for help or q to quit)[m[K[K[?1l>bash-4.2$ ldd simple
+	linux-vdso.so.1 =>  (0x00007ffdc07c8000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007f13a8b42000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007f13a8775000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f13a8e44000)
+bash-4.2$ ./simple
+Average is equal to: 5.800000 
+bash-4.2$ exit
+exit
+
+Script done on Fri 31 Aug 2018 11:31:29 AM CDT

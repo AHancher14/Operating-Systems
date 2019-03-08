@@ -1,0 +1,44 @@
+Script started on Thu 30 Aug 2018 08:37:49 AM CDT
+bash-4.2$ man [command]
+No manual entry for [command]
+bash-4.2$ cd
+bash-4.2$ pwd
+/home/u2/ajh0067
+bash-4.2$ ls
+commands.script  comp3500  ntuser.cmd  sample.script  typescript
+bash-4.2$ mkdir project1
+bash-4.2$ ls
+commands.script  comp3500  ntuser.cmd  project1  sample.script	typescript
+bash-4.2$ cp comp3500 project1
+cp: omitting directory ‘comp3500’
+bash-4.2$ mx [K[Kv sample.script comp3500
+bash-4.2$ rm sample.script
+rm: cannot remove ‘sample.script’: No such file or directory
+bash-4.2$ ls
+commands.script  comp3500  ntuser.cmd  project1  typescript
+bash-4.2$ cd project1
+bash-4.2$ ls
+bash-4.2$ cd
+bash-4.2$ ls
+commands.script  comp3500  ntuser.cmd  project1  typescript
+bash-4.2$ cd comp3500
+bash-4.2$ ls
+helloworld  hellworld.c  sample.script
+bash-4.2$ rm sample [K.script
+bash-4.2$ ls
+helloworld  hellworld.c
+bash-4.2$ cd
+bash-4.2$ ls
+commands.script  comp3500  ntuser.cmd  project1  typescript
+bash-4.2$ rmdir [options] di[K[Kdirectory
+rmdir: failed to remove ‘[options]’: No such file or directory
+rmdir: failed to remove ‘directory’: No such file or directory
+bash-4.2$ ls
+commands.script  comp3500  ntuser.cmd  project1  typescript
+bash-4.2$ rmdir project1
+bash-4.2$ ls
+commands.script  comp3500  ntuser.cmd  typescript
+bash-4.2$ exit
+exit
+
+Script done on Thu 30 Aug 2018 08:45:01 AM CDT

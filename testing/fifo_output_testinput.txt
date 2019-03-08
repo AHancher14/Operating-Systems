@@ -1,0 +1,21 @@
+Group 8's VM Simulator Version 1.00 
+
+#### INPUT FILE: testinput.txt #### 
+
+#### FIFO TLB REPLACEMENT ALGORITHM ####
+
+Virtual Address: 3; Physical Address: 3; Value: 0 
+Virtual Address: 259; Physical Address: 259; Value: 64 
+Virtual Address: 515; Physical Address: 515; Value: 128 
+Virtual Address: 771; Physical Address: 771; Value: 192 
+Virtual Address: 1027; Physical Address: 1027; Value: 0 
+Virtual Address: 1283; Physical Address: 1283; Value: 64 
+Virtual Address: 7; Physical Address: 7; Value: 1 
+Virtual Address: 263; Physical Address: 263; Value: 65 
+Virtual Address: 519; Physical Address: 519; Value: 129 
+Virtual Address: 775; Physical Address: 775; Value: 193 
+Virtual Address: 1031; Physical Address: 1031; Value: 1 
+Virtual Address: 1287; Physical Address: 1287; Value: 65 
+
+* Page fault rate: 50.00%
+* TLB hit rate: 50.00%

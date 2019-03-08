@@ -1,0 +1,621 @@
+Script started on Fri 31 Aug 2018 11:09:20 AM CDT
+bash-4.2$ git init
+Initialized empty Git repository in /home/u2/ajh0067/comp3500/.git/
+bash-4.2$ git status
+# On branch master
+#
+# Initial commit
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	.gdbinit
+#	.simple.c.swp
+#	commands2.script
+#	commands3.script
+#	commands4.script
+#	cpuinfo.txt
+#	helloworld
+#	hellworld.c
+#	interrupts.txt
+#	lspci.txt
+#	meminfo.txt
+#	simple
+#	simple.c
+nothing added to commit but untracked files present (use "git add" to track)
+bash-4.2$ git add *.c
+bash-4.2$ git status
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#	new file:   hellworld.c
+#	new file:   simple.c
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	.gdbinit
+#	.simple.c.swp
+#	commands2.script
+#	commands3.script
+#	commands4.script
+#	cpuinfo.txt
+#	helloworld
+#	interrupts.txt
+#	lspci.txt
+#	meminfo.txt
+#	simple
+bash-4.2$ git commit -m "first git commit"
+[master (root-commit) dd69a4e] first git commit
+ Committer: Alan J Hancher <ajh0067@tux058.eng.auburn.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 34 insertions(+)
+ create mode 100644 hellworld.c
+ create mode 100644 simple.c
+bash-4.2$ cd ..
+bash-4.2$ mkdir temp
+bash-4.2$ git clone https://i[Kgithub.com/temp[K[K[K[Klibgit2/libgit2
+Cloning into 'libgit2'...
+remote: Counting objects: 83499, done.[K
+remote: Compressing objects:   0% (1/23725)   [Kremote: Compressing objects:   1% (238/23725)   [Kremote: Compressing objects:   2% (475/23725)   [Kremote: Compressing objects:   3% (712/23725)   [Kremote: Compressing objects:   4% (949/23725)   [Kremote: Compressing objects:   5% (1187/23725)   [Kremote: Compressing objects:   6% (1424/23725)   [Kremote: Compressing objects:   7% (1661/23725)   [Kremote: Compressing objects:   8% (1898/23725)   [Kremote: Compressing objects:   9% (2136/23725)   [Kremote: Compressing objects:  10% (2373/23725)   [Kremote: Compressing objects:  11% (2610/23725)   [Kremote: Compressing objects:  12% (2847/23725)   [Kremote: Compressing objects:  13% (3085/23725)   [Kremote: Compressing objects:  14% (3322/23725)   [Kremote: Compressing objects:  15% (3559/23725)   [Kremote: Compressing objects:  16% (3796/23725)   [Kremote: Compressing objects:  17% (4034/23725)   [Kremote: Compressing objects:  18% (4271/23725)   [Kremote: Compressing objects:  19% (4508/23725)   [Kremote: Compressing objects:  20% (4745/23725)   [Kremote: Compressing objects:  21% (4983/23725)   [Kremote: Compressing objects:  22% (5220/23725)   [Kremote: Compressing objects:  23% (5457/23725)   [Kremote: Compressing objects:  24% (5694/23725)   [Kremote: Compressing objects:  25% (5932/23725)   [Kremote: Compressing objects:  26% (6169/23725)   [Kremote: Compressing objects:  27% (6406/23725)   [Kremote: Compressing objects:  28% (6643/23725)   [Kremote: Compressing objects:  29% (6881/23725)   [Kremote: Compressing objects:  30% (7118/23725)   [Kremote: Compressing objects:  31% (7355/23725)   [Kremote: Compressing objects:  32% (7592/23725)   [Kremote: Compressing objects:  33% (7830/23725)   [Kremote: Compressing objects:  34% (8067/23725)   [Kremote: Compressing objects:  35% (8304/23725)   [Kremote: Compressing objects:  36% (8541/23725)   [Kremote: Compressing objects:  37% (8779/23725)   [Kremote: Compressing objects:  38% (9016/23725)   [Kremote: Compressing objects:  39% (9253/23725)   [Kremote: Compressing objects:  40% (9490/23725)   [Kremote: Compressing objects:  41% (9728/23725)   [Kremote: Compressing objects:  42% (9965/23725)   [Kremote: Compressing objects:  43% (10202/23725)   [Kremote: Compressing objects:  44% (10439/23725)   [Kremote: Compressing objects:  45% (10677/23725)   [Kremote: Compressing objects:  46% (10914/23725)   [Kremote: Compressing objects:  47% (11151/23725)   [Kremote: Compressing objects:  48% (11388/23725)   [Kremote: Compressing objects:  49% (11626/23725)   [Kremote: Compressing objects:  50% (11863/23725)   [Kremote: Compressing objects:  51% (12100/23725)   [Kremote: Compressing objects:  52% (12337/23725)   [Kremote: Compressing objects:  53% (12575/23725)   [Kremote: Compressing objects:  54% (12812/23725)   [Kremote: Compressing objects:  55% (13049/23725)   [Kremote: Compressing objects:  56% (13286/23725)   [Kremote: Compressing objects:  57% (13524/23725)   [Kremote: Compressing objects:  58% (13761/23725)   [Kremote: Compressing objects:  59% (13998/23725)   [Kremote: Compressing objects:  60% (14235/23725)   [Kremote: Compressing objects:  61% (14473/23725)   [Kremote: Compressing objects:  62% (14710/23725)   [Kremote: Compressing objects:  63% (14947/23725)   [Kremote: Compressing objects:  64% (15184/23725)   [Kremote: Compressing objects:  65% (15422/23725)   [Kremote: Compressing objects:  66% (15659/23725)   [Kremote: Compressing objects:  67% (15896/23725)   [Kremote: Compressing objects:  68% (16133/23725)   [Kremote: Compressing objects:  69% (16371/23725)   [Kremote: Compressing objects:  70% (16608/23725)   [Kremote: Compressing objects:  71% (16845/23725)   [Kremote: Compressing objects:  72% (17082/23725)   [Kremote: Compressing objects:  73% (17320/23725)   [Kremote: Compressing objects:  74% (17557/23725)   [Kremote: Compressing objects:  75% (17794/23725)   [Kremote: Compressing objects:  76% (18031/23725)   [Kremote: Compressing objects:  77% (18269/23725)   [Kremote: Compressing objects:  78% (18506/23725)   [Kremote: Compressing objects:  79% (18743/23725)   [Kremote: Compressing objects:  80% (18980/23725)   [Kremote: Compressing objects:  81% (19218/23725)   [Kremote: Compressing objects:  82% (19455/23725)   [Kremote: Compressing objects:  83% (19692/23725)   [Kremote: Compressing objects:  84% (19929/23725)   [Kremote: Compressing objects:  85% (20167/23725)   [Kremote: Compressing objects:  86% (20404/23725)   [Kremote: Compressing objects:  87% (20641/23725)   [Kremote: Compressing objects:  88% (20878/23725)   [Kremote: Compressing objects:  89% (21116/23725)   [Kremote: Compressing objects:  90% (21353/23725)   [Kremote: Compressing objects:  91% (21590/23725)   [Kremote: Compressing objects:  92% (21827/23725)   [Kremote: Compressing objects:  93% (22065/23725)   [Kremote: Compressing objects:  94% (22302/23725)   [Kremote: Compressing objects:  95% (22539/23725)   [Kremote: Compressing objects:  96% (22776/23725)   [Kremote: Compressing objects:  97% (23014/23725)   [Kremote: Compressing objects:  98% (23251/23725)   [Kremote: Compressing objects:  99% (23488/23725)   [Kremote: Compressing objects: 100% (23725/23725)   [Kremote: Compressing objects: 100% (23725/23725), done.[K
+Receiving objects:   0% (1/83499)   Receiving objects:   1% (835/83499)   Receiving objects:   2% (1670/83499)   Receiving objects:   3% (2505/83499)   Receiving objects:   4% (3340/83499)   Receiving objects:   5% (4175/83499)   Receiving objects:   6% (5010/83499)   Receiving objects:   7% (5845/83499)   Receiving objects:   8% (6680/83499)   Receiving objects:   9% (7515/83499)   Receiving objects:  10% (8350/83499)   Receiving objects:  11% (9185/83499)   Receiving objects:  12% (10020/83499)   Receiving objects:  13% (10855/83499)   Receiving objects:  14% (11690/83499)   Receiving objects:  15% (12525/83499)   Receiving objects:  16% (13360/83499)   Receiving objects:  17% (14195/83499)   Receiving objects:  18% (15030/83499), 3.48 MiB | 6.95 MiB/s   Receiving objects:  19% (15865/83499), 3.48 MiB | 6.95 MiB/s   Receiving objects:  20% (16700/83499), 3.48 MiB | 6.95 MiB/s   Receiving objects:  21% (17535/83499), 3.48 MiB | 6.95 MiB/s   Receiving objects:  22% (18370/83499), 3.48 MiB | 6.95 MiB/s   Receiving objects:  23% (19205/83499), 3.48 MiB | 6.95 MiB/s   Receiving objects:  24% (20040/83499), 3.48 MiB | 6.95 MiB/s   Receiving objects:  25% (20875/83499), 3.48 MiB | 6.95 MiB/s   Receiving objects:  26% (21710/83499), 3.48 MiB | 6.95 MiB/s   Receiving objects:  27% (22545/83499), 3.48 MiB | 6.95 MiB/s   Receiving objects:  28% (23380/83499), 3.48 MiB | 6.95 MiB/s   Receiving objects:  29% (24215/83499), 3.48 MiB | 6.95 MiB/s   Receiving objects:  30% (25050/83499), 3.48 MiB | 6.95 MiB/s   Receiving objects:  31% (25885/83499), 3.48 MiB | 6.95 MiB/s   Receiving objects:  32% (26720/83499), 3.48 MiB | 6.95 MiB/s   Receiving objects:  33% (27555/83499), 3.48 MiB | 6.95 MiB/s   Receiving objects:  34% (28390/83499), 3.48 MiB | 6.95 MiB/s   Receiving objects:  35% (29225/83499), 3.48 MiB | 6.95 MiB/s   Receiving objects:  36% (30060/83499), 3.48 MiB | 6.95 MiB/s   Receiving objects:  37% (30895/83499), 3.48 MiB | 6.95 MiB/s   Receiving objects:  37% (31725/83499), 3.48 MiB | 6.95 MiB/s   Receiving objects:  38% (31730/83499), 3.48 MiB | 6.95 MiB/s   Receiving objects:  39% (32565/83499), 11.77 MiB | 11.73 MiB/s   Receiving objects:  40% (33400/83499), 11.77 MiB | 11.73 MiB/s   Receiving objects:  41% (34235/83499), 11.77 MiB | 11.73 MiB/s   Receiving objects:  42% (35070/83499), 11.77 MiB | 11.73 MiB/s   Receiving objects:  43% (35905/83499), 11.77 MiB | 11.73 MiB/s   Receiving objects:  44% (36740/83499), 11.77 MiB | 11.73 MiB/s   Receiving objects:  45% (37575/83499), 11.77 MiB | 11.73 MiB/s   Receiving objects:  46% (38410/83499), 11.77 MiB | 11.73 MiB/s   Receiving objects:  47% (39245/83499), 11.77 MiB | 11.73 MiB/s   Receiving objects:  48% (40080/83499), 11.77 MiB | 11.73 MiB/s   Receiving objects:  49% (40915/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  50% (41750/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  51% (42585/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  52% (43420/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  53% (44255/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  54% (45090/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  55% (45925/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  56% (46760/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  57% (47595/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  58% (48430/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  59% (49265/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  60% (50100/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  61% (50935/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  62% (51770/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  63% (52605/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  64% (53440/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  65% (54275/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  66% (55110/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  67% (55945/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  68% (56780/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  69% (57615/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  70% (58450/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  71% (59285/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  72% (60120/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  73% (60955/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  74% (61790/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  75% (62625/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  76% (63460/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  77% (64295/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  78% (65130/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  79% (65965/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  80% (66800/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  80% (67342/83499), 23.61 MiB | 15.69 MiB/s   Receiving objects:  81% (67635/83499), 33.87 MiB | 16.89 MiB/s   Receiving objects:  82% (68470/83499), 33.87 MiB | 16.89 MiB/s   Receiving objects:  83% (69305/83499), 33.87 MiB | 16.89 MiB/s   Receiving objects:  84% (70140/83499), 33.87 MiB | 16.89 MiB/s   Receiving objects:  85% (70975/83499), 33.87 MiB | 16.89 MiB/s   Receiving objects:  86% (71810/83499), 33.87 MiB | 16.89 MiB/s   Receiving objects:  87% (72645/83499), 33.87 MiB | 16.89 MiB/s   Receiving objects:  88% (73480/83499), 33.87 MiB | 16.89 MiB/s   Receiving objects:  89% (74315/83499), 33.87 MiB | 16.89 MiB/s   Receiving objects:  90% (75150/83499), 33.87 MiB | 16.89 MiB/s   Receiving objects:  91% (75985/83499), 33.87 MiB | 16.89 MiB/s   Receiving objects:  92% (76820/83499), 33.87 MiB | 16.89 MiB/s   Receiving objects:  93% (77655/83499), 33.87 MiB | 16.89 MiB/s   Receiving objects:  94% (78490/83499), 33.87 MiB | 16.89 MiB/s   Receiving objects:  95% (79325/83499), 33.87 MiB | 16.89 MiB/s   Receiving objects:  96% (80160/83499), 33.87 MiB | 16.89 MiB/s   Receiving objects:  97% (80995/83499), 33.87 MiB | 16.89 MiB/s   Receiving objects:  98% (81830/83499), 33.87 MiB | 16.89 MiB/s   Receiving objects:  99% (82665/83499), 33.87 MiB | 16.89 MiB/s   remote: Total 83499 (delta 58088), reused 83495 (delta 58086), pack-reused 0[K
+Receiving objects: 100% (83499/83499), 33.87 MiB | 16.89 MiB/s   Receiving objects: 100% (83499/83499), 37.97 MiB | 16.89 MiB/s, done.
+Resolving deltas:   0% (0/58088)   Resolving deltas:   1% (647/58088)   Resolving deltas:   2% (1250/58088)   Resolving deltas:   3% (1743/58088)   Resolving deltas:   4% (2379/58088)   Resolving deltas:   5% (3014/58088)   Resolving deltas:   6% (3750/58088)   Resolving deltas:   7% (4193/58088)   Resolving deltas:   8% (4686/58088)   Resolving deltas:   9% (5229/58088)   Resolving deltas:  10% (5809/58088)   Resolving deltas:  11% (6393/58088)   Resolving deltas:  12% (6996/58088)   Resolving deltas:  13% (7655/58088)   Resolving deltas:  14% (8141/58088)   Resolving deltas:  15% (8728/58088)   Resolving deltas:  16% (9299/58088)   Resolving deltas:  17% (10111/58088)   Resolving deltas:  18% (10506/58088)   Resolving deltas:  19% (11091/58088)   Resolving deltas:  20% (11701/58088)   Resolving deltas:  21% (12202/58088)   Resolving deltas:  22% (12793/58088)   Resolving deltas:  23% (13426/58088)   Resolving deltas:  24% (13945/58088)   Resolving deltas:  25% (14597/58088)   Resolving deltas:  26% (15109/58088)   Resolving deltas:  27% (15685/58088)   Resolving deltas:  28% (16329/58088)   Resolving deltas:  29% (16854/58088)   Resolving deltas:  30% (17437/58088)   Resolving deltas:  31% (18046/58088)   Resolving deltas:  32% (18817/58088)   Resolving deltas:  33% (19171/58088)   Resolving deltas:  34% (19825/58088)   Resolving deltas:  35% (20450/58088)   Resolving deltas:  36% (21272/58088)   Resolving deltas:  37% (21528/58088)   Resolving deltas:  38% (22153/58088)   Resolving deltas:  39% (22686/58088)   Resolving deltas:  40% (23245/58088)   Resolving deltas:  41% (23820/58088)   Resolving deltas:  42% (24476/58088)   Resolving deltas:  43% (25007/58088)   Resolving deltas:  44% (25669/58088)   Resolving deltas:  45% (26147/58088)   Resolving deltas:  46% (26758/58088)   Resolving deltas:  47% (27307/58088)   Resolving deltas:  48% (28007/58088)   Resolving deltas:  49% (28481/58088)   Resolving deltas:  50% (29343/58088)   Resolving deltas:  51% (29649/58088)   Resolving deltas:  52% (30209/58088)   Resolving deltas:  53% (30997/58088)   Resolving deltas:  54% (31475/58088)   Resolving deltas:  55% (31968/58088)   Resolving deltas:  56% (32537/58088)   Resolving deltas:  57% (33122/58088)   Resolving deltas:  58% (33698/58088)   Resolving deltas:  59% (34277/58088)   Resolving deltas:  60% (34854/58088)   Resolving deltas:  61% (35436/58088)   Resolving deltas:  62% (36024/58088)   Resolving deltas:  63% (36630/58088)   Resolving deltas:  64% (37182/58088)   Resolving deltas:  65% (37764/58088)   Resolving deltas:  66% (38349/58088)   Resolving deltas:  67% (38931/58088)   Resolving deltas:  68% (39508/58088)   Resolving deltas:  69% (40106/58088)   Resolving deltas:  70% (40892/58088)   Resolving deltas:  71% (41464/58088)   Resolving deltas:  71% (41700/58088)   Resolving deltas:  72% (41900/58088)   Resolving deltas:  73% (42483/58088)   Resolving deltas:  74% (43062/58088)   Resolving deltas:  75% (43582/58088)   Resolving deltas:  76% (44203/58088)   Resolving deltas:  77% (44730/58088)   Resolving deltas:  78% (45330/58088)   Resolving deltas:  79% (45898/58088)   Resolving deltas:  80% (46478/58088)   Resolving deltas:  81% (47066/58088)   Resolving deltas:  82% (47667/58088)   Resolving deltas:  83% (48269/58088)   Resolving deltas:  84% (48845/58088)   Resolving deltas:  85% (49462/58088)   Resolving deltas:  86% (49980/58088)   Resolving deltas:  87% (50551/58088)   Resolving deltas:  88% (51121/58088)   Resolving deltas:  89% (51716/58088)   Resolving deltas:  90% (52282/58088)   Resolving deltas:  91% (52879/58088)   Resolving deltas:  92% (53442/58088)   Resolving deltas:  93% (54034/58088)   Resolving deltas:  94% (54611/58088)   Resolving deltas:  95% (55188/58088)   Resolving deltas:  96% (55792/58088)   Resolving deltas:  97% (56470/58088)   Resolving deltas:  98% (56936/58088)   Resolving deltas:  98% (57168/58088)   Resolving deltas:  99% (57512/58088)   Resolving deltas: 100% (58088/58088)   Resolving deltas: 100% (58088/58088), done.
+Checking out files:   4% (278/5982)   Checking out files:   5% (300/5982)   Checking out files:   6% (359/5982)   Checking out files:   7% (419/5982)   Checking out files:   8% (479/5982)   Checking out files:   9% (539/5982)   Checking out files:   9% (540/5982)   Checking out files:  10% (599/5982)   Checking out files:  11% (659/5982)   Checking out files:  12% (718/5982)   Checking out files:  12% (761/5982)   Checking out files:  13% (778/5982)   Checking out files:  14% (838/5982)   Checking out files:  15% (898/5982)   Checking out files:  16% (958/5982)   Checking out files:  17% (1017/5982)   Checking out files:  17% (1062/5982)   Checking out files:  18% (1077/5982)   Checking out files:  19% (1137/5982)   Checking out files:  20% (1197/5982)   Checking out files:  21% (1257/5982)   Checking out files:  22% (1317/5982)   Checking out files:  22% (1325/5982)   Checking out files:  23% (1376/5982)   Checking out files:  24% (1436/5982)   Checking out files:  25% (1496/5982)   Checking out files:  26% (1556/5982)   Checking out files:  26% (1559/5982)   Checking out files:  27% (1616/5982)   Checking out files:  28% (1675/5982)   Checking out files:  29% (1735/5982)   Checking out files:  30% (1795/5982)   Checking out files:  31% (1855/5982)   Checking out files:  31% (1913/5982)   Checking out files:  32% (1915/5982)   Checking out files:  33% (1975/5982)   Checking out files:  34% (2034/5982)   Checking out files:  35% (2094/5982)   Checking out files:  35% (2135/5982)   Checking out files:  36% (2154/5982)   Checking out files:  37% (2214/5982)   Checking out files:  38% (2274/5982)   Checking out files:  39% (2333/5982)   Checking out files:  40% (2393/5982)   Checking out files:  41% (2453/5982)   Checking out files:  41% (2484/5982)   Checking out files:  42% (2513/5982)   Checking out files:  43% (2573/5982)   Checking out files:  44% (2633/5982)   Checking out files:  45% (2692/5982)   Checking out files:  46% (2752/5982)   Checking out files:  47% (2812/5982)   Checking out files:  47% (2827/5982)   Checking out files:  48% (2872/5982)   Checking out files:  49% (2932/5982)   Checking out files:  50% (2991/5982)   Checking out files:  51% (3051/5982)   Checking out files:  51% (3071/5982)   Checking out files:  52% (3111/5982)   Checking out files:  53% (3171/5982)   Checking out files:  54% (3231/5982)   Checking out files:  55% (3291/5982)   Checking out files:  55% (3297/5982)   Checking out files:  56% (3350/5982)   Checking out files:  57% (3410/5982)   Checking out files:  58% (3470/5982)   Checking out files:  58% (3477/5982)   Checking out files:  59% (3530/5982)   Checking out files:  60% (3590/5982)   Checking out files:  61% (3650/5982)   Checking out files:  62% (3709/5982)   Checking out files:  62% (3745/5982)   Checking out files:  63% (3769/5982)   Checking out files:  64% (3829/5982)   Checking out files:  65% (3889/5982)   Checking out files:  65% (3936/5982)   Checking out files:  66% (3949/5982)   Checking out files:  67% (4008/5982)   Checking out files:  68% (4068/5982)   Checking out files:  69% (4128/5982)   Checking out files:  69% (4164/5982)   Checking out files:  70% (4188/5982)   Checking out files:  71% (4248/5982)   Checking out files:  72% (4308/5982)   Checking out files:  73% (4367/5982)   Checking out files:  73% (4398/5982)   Checking out files:  74% (4427/5982)   Checking out files:  75% (4487/5982)   Checking out files:  76% (4547/5982)   Checking out files:  76% (4564/5982)   Checking out files:  77% (4607/5982)   Checking out files:  78% (4666/5982)   Checking out files:  79% (4726/5982)   Checking out files:  79% (4779/5982)   Checking out files:  80% (4786/5982)   Checking out files:  81% (4846/5982)   Checking out files:  82% (4906/5982)   Checking out files:  83% (4966/5982)   Checking out files:  83% (4985/5982)   Checking out files:  84% (5025/5982)   Checking out files:  85% (5085/5982)   Checking out files:  86% (5145/5982)   Checking out files:  86% (5161/5982)   Checking out files:  87% (5205/5982)   Checking out files:  88% (5265/5982)   Checking out files:  89% (5324/5982)   Checking out files:  89% (5365/5982)   Checking out files:  90% (5384/5982)   Checking out files:  91% (5444/5982)   Checking out files:  92% (5504/5982)   Checking out files:  92% (5526/5982)   Checking out files:  93% (5564/5982)   Checking out files:  94% (5624/5982)   Checking out files:  95% (5683/5982)   Checking out files:  95% (5740/5982)   Checking out files:  96% (5743/5982)   Checking out files:  97% (5803/5982)   Checking out files:  98% (5863/5982)   Checking out files:  99% (5923/5982)   Checking out files:  99% (5950/5982)   Checking out files: 100% (5982/5982)   Checking out files: 100% (5982/5982), done.
+bash-4.2$ git diff
+usage: git diff [--no-index] <path> <path>
+bash-4.2$ cd ..
+bash-4.2$ cd comp3500
+bash: cd: comp3500: No such file or directory
+bash-4.2$ ls
+aaa0041  aza0153  cgz0003  dze0006  hmi0003  jja0013  kca0006  mcm0120	nsv0004  rzw0027  tne0001
+aaa0050  aza0159  cha0003  dze0009  hmj0008  jja0020  kcb0015  mcm0140	nsv0005  rzw0030  tnh0020
+aaa0060  aza0178  chb0017  dzg0022  hml0005  jjb0026  kcb0023  mcp0011	ntb0007  rzx0006  tnj0017
+aab0068  aza0195  chb0027  dzg0023  hmm0040  jjb0032  kcb0040  mcp0041	ntb0009  rzy0016  tnj0018
+aab0076  azb0118  chd0013  dzh0037  hmn0005  jjb0042  kcb0046  mcr0030	ntc0012  rzz0024  tno0003
+aac0014  azb0144  chd0015  dzk0044  hmz0004  jjc0030  kcb0051  mcr0042	ntf0004  rzz0026  tns0007
+aac0043  azc0043  chm0038  dzl0038  hnb0003  jjc0046  kce0004  mcs0037	nth0003  saa0020  toh0002
+aad0022  azc0086  chm0039  dzl0062  hnb0007  jjc0049  kcg0020  mcs0044	ntl0007  saa0023  tor0003
+aag0030  azc0094  chr0010  dzl0066  hnb0017  jjf0012  kcg0022  mcs0048	ntn0004  saa0029  tpc0009
+aag0046  azd0077  chris    dzl0074  hnb0019  jjl0011  kcg0023  mcs0054	nts0005  sab0065  tpf0002
+aah0016  azd0078  chs0018  dzl0078  hng0003  jjm0014  kco0009  mcs0076	nts0010  sab0071  tpf0005
+aah0040  azf0052  chs0028  dzn0005  hng0008  jjm0024  kcp0019  mcs0107	nts0011  sab0101  tpm0013
+aaj0014  azg0059  chs0031  dzr0046  hns0020  jjm0036  kcr0022  mcs0126	ntt0004  sab0112  tpm0017
+aak0012  azg0077  chs0035  dzs0040  hnw0022  jjn0006  kct0007  mct0031	ntw0007  sac0043  tpv0004
+aak0013  azg0099  cht0008  dzs0064  hoh0003  jjp0022  kcw0013  mct0042	nvr0001  sac0074  tpy0002
+aak0016  azh0050  cic0009  dzs0078  hol0003  jjq0001  kdb0043  mct0052	nwa0005  sad0024  tra0011
+aak0018  azh0060  cjb0039  dzs0093  howarhc  jjr0036  kdd0011  mcv0011	nwb0007  saf0006  trb0026
+aak0030  azh0065  cjb0041  dzt0021  hpb0002  jjs0021  kdd0019  mcw0021	nwg0005  saf0025  trb0027
+aam0037  azh0071  cjb0058  dzw0037  hpb0003  jjs0039  kdd0027  mcw0025	nwh0003  sag0024  trd0007
+aam0065  azh0098  cjb0060  dzx0008  hph0006  jjt0020  kde0008  mcw0037	nwh0008  sah0079  trf0005
+aan0006  azh0100  cjb0084  dzy0018  hph0011  jkb0046  kdg0030  mcw0047	nwj0003  saj0012  trg0009
+aao0008  azj0036  cjb0089  dzz0018  hqd0001  jkc0039  kdm0033  mcw0064	nwk0004  saj0018  trh0028
+aap0025  azj0039  cjb0092  eac0062  hrc0023  jkg0022  kdn0005  mcz0005	nws0003  sak0042  trh0032
+aap0028  azk0081  cjb0094  ead0035  hrg0014  jkh0017  kdp0027  mdb0025	nws0004  sal0052  trj0013
+aap0043  azl0051  cjb0104  ead0043  hrg0019  jkh0018  kdr0019  mdb0051	nxh0001  sam0114  trk0014
+aar0018  azm0144  cjb0107  eag0014  hrh0026  jki0002  kds0049  mdb0064	nza0027  sam0119  trk0015
+aas0050  azm0170  cjb0111  eam0078  hrm0008  jkj0007  kdt0018  mdg0035	nza0041  sam0131  trl0007
+aas0064  azm0175  cjc0028  eap0027  hrr0014  jkm0013  ked0025  mdj0010	nza0048  sap0034  trl0020
+aat0028  azm0179  cjc0085  eap0030  hrs0018  jkm0056  ked0045  mdj0025	nzc0018  sap0043  trm0046
+aav0008  azm0184  cjd0046  eas0047  hrv0002  jko0010  kef0024  mdp0047	nzc0044  sar0007  trp0024
+aaw0046  azm0196  cjd0050  eas0075  hsa0006  jkp0026  keg0048  mdr0042	nzd0018  sar0043  trs0036
+abb0048  azn0036  cje0012  eas0087  hsg0009  jks0044  keg0073  mds0034	nzd0019  sar0049  trw0010
+abb0070  azo0023  cjf0044  eas0094  hsm0020  jkw0020  keh0046  mdt0021	nzg0017  sas0042  trw0011
+abc0045  azp0050  cjg0023  eat0029  hss0005  jlb0082  keh0083  mdw0031	nzg0030  sas0049  trw0014
+abc0053  azp0067  cjg0032  eat0031  hst0003  jlb0084  keh0108  mdw0048	nzg0033  sas0113  trw0024
+abc0073  azp0098  cjg0033  eav0006  hsw0011  jlb0086  kek0040  mdw0052	nzh0023  sas0133  tsc0021
+abc0079  azr0071  cjg0041  eaw0041  htc0002  jlb0143  kem0067  mdw0055	nzh0024  sat0035  tsd0021
+abh0042  azs0100  cjh0054  ebh0004  htt0001  jlc0048  kem0091  meb0038	nzi0004  saw0029  tsg0008
+abh0050  azs0118  cjh0064  ebm0015  hup0002  jlc0084  kem0100  meb0047	nzk0016  sbb0041  tsh0020
+abk0021  azs0120  cjh0070  ebs0024  hwc0009  jlc0086  kep0030  meb0079	nzk0021  sbc0025  tsk0005
+abm0033  azs0156  cjh0071  ecb0063  hwk0004  jlc0088  ker0046  meb0110	nzm0025  sbc0026  tsm0013
+abp0034  azs0189  cjh0076  ecb0067  hww0003  jlc0094  kes0080  meb0122	nzm0034  sbd0011  tsm0027
+abs0053  azs0202  cjj0017  ecc0055  hyg0001  jlc0103  kew0061  meb0142	nzn0015  sbf0006  tsm0035
+abs0074  azt0052  cjk0038  ech0047  hzb0026  jld0056  kfp0006  mec0054	nzn0023  sbh0027  tsn0010
+abs0079  azw0074  cjl0022  ech0049  hzc0022  jle0028  kfp0007  mec0094	nzp0031  sbk0012  tsp0015
+abt0027  azw0097  cjl0036  ecl0026  hzc0061  jlf0038  kfy0001  mee0024	nzt0019  sbk0017  tsp0016
+abt0030  azz0017  cjm0040  ecm0038  hzc0069  jlf0044  kgc0010  mef0032	oaa0014  sbm0034  tss0015
+aca0025  azz0028  cjm0049  ecm0050  hzd0024  jlf0077  kgc0027  meg0038	obr0001  sbp0012  tst0012
+aca0030  baa0021  cjm0053  ecm0055  hzh0047  jlg0042  kgr0017  meg0052	ods0001  sbr0016  ttb0006
+acb0059  baa0025  cjm0083  ecm0057  hzh0050  jlg0071  kgw0019  meh0050	odz0001  sbs0042  ttb0014
+acb0111  bab0094  cjm0085  ecp0030  hzh0056  jlg0073  kgw0020  meh0114	oer0001  sca0018  ttb0020
+acb0135  bab0096  cjo0001  ecp0039  hzk0037  jlh0073  kgw0028  mej0047	ohg0002  sca0021  ttc0003
+acc0033  bab0107  cjp0041  ecs0055  hzk0053  jlh0115  khc0011  mek0012	ohn0001  scb0045  tth0015
+acc0046  bab0108  cjp0043  ect0016  hzk0060  jlh0118  khc0022  mel0027	ojn0003  scb0074  tup0001
+acc0077  bab0116  cjr0029  ect0017  hzk0062  jlj0049  khg0008  mem0188	ojr0002  scc0045  twb0012
+acc0085  bac0051  cjr0052  ecw0031  hzl0061  jlj0051  kic0004  mem0213	okm0002  scc0065  twc0010
+acc0090  bad0020  cjr0054  ecw0033  hzl0071  jlk0011  kilgota  mep0032	oks0005  scd0021  twc0018
+acc0091  bad0024  cjr0056  eda0008  hzl0088  jlk0039  kjd0020  mep0058	olp0004  scd0040  twf0001
+acd0061  baf0023  cjr0059  edb0017  hzl0097  jlm0083  kjf0002  mer0031	olr0003  scd0044  twf0006
+acf0039  baf0033  cjs0021  edb0029  hzm0020  jlo0014  kjh0015  mer0054	omc0006  scf0024  twg0009
+ach0028  bag0013  cjs0053  edd0004  hzm0025  jlr0044  kjh0016  mer0056	omh0002  sch0025  twh0008
+ach0071  bah0054  cjs0086  edd0009  hzm0045  jls0092  kjj0016  mer0059	omh0004  sch0040  twh0019
+ach0092  bah0056  cjs0099  edg0010  hzm0047  jls0147  kjs0031  mer0064	omk0006  sch0051  twj0005
+ack0045  baj0017  cjt0016  edh0020  hzp0036  jlt0041  kjw0039  mes0068	omp0003  scm0028  twj0009
+acl0026  baj0019  cjt0017  edj0007  hzr0024  jlt0047  kkm0025  mes0109	oms0005  scm0064  twm0023
+acl0028  baj0024  cjw0038  edm0003  hzr0025  jlt0049  kkt0006  mes0149	opv0001  scm0065  two0001
+acl0046  bak0025  cjw0058  edw0034  hzs0040  jlv0016  kla0019  mes0160	org0003  scn0014  twp0010
+acm0083  bal0012  ckg0003  edy0002  hzs0053  jlw0102  klb0028  met0034	ort0002  sco0004  tws0008
+acm0101  bal0026  ckg0010  eea0014  hzs0057  jlw0105  klb0066  met0046	osw0002  sco0012  tws0012
+acm0114  bam0018  ckh0011  eeb0035  hzs0062  jlw0120  klb0096  mew0087	otc0001  scp0043  tww0010
+acn0018  bam0042  ckj0013  eeg0016  hzs0084  jmb0032  klc0096  mfd0011	ovl0002  scp0050  txl0001
+acp0052  bam0043  ckm0024  eeh0019  hzt0026  jmb0108  kld0042  mfd0012	ozc0008  scr0015  txl0002
+acr0044  bam0067  cks0011  eeh0032  hzt0031  jmb0121  kleypet  mff0004	ozg0012  scw0031  tzb0054
+acr0067  bao0005  cks0012  eek0017  hzw0050  jmb0143  klf0031  mfj0003	ozp0004  scw0039  tzc0046
+acs0050  bao0011  clb0026  eem0037  hzw0057  jmc0118  klg0035  mfj0005	ozw0005  sdb0046  tzc0050
+acs0052  bap0031  clb0052  eem0040  hzw0067  jmc0162  klh0061  mfk0008	pab0008  sdd0006  tzd0018
+acs0090  bar0030  clb0060  eer0017  hzx0005  jmd0041  klj0030  mfl0012	pab0017  sdh0043  tzd0027
+acs0142  bar0043  clb0088  ees0033  hzx0026  jmd0085  kll0021  mfs0019	pac0026  sdm0030  tzd0033
+acs0144  bar0045  clb0090  eew0019  hzy0010  jmd0092  klm0071  mga0011	pac0028  sdn0008  tzg0013
+acs0146  bas0048  clb0103  efj0008  hzy0033  jmd0097  klm0078  mga0016	pad0022  sdp0032  tzg0025
+acs0157  bat0030  clc0062  efr0005  hzy0037  jmd0120  kln0013  mgb0023	pag0015  sdp0034  tzh0044
+act0020  baw0038  clc0078  egc0022  hzz0029  jme0016  klo0008  mgb0037	pag0019  sdr0024  tzj0015
+act0021  bbm0004  clc0123  egc0024  hzz0041  jmf0058  klp0035  mgb0044	pah0018  sds0015  tzj0019
+act0042  bbs0006  cld0033  egc0025  hzz0054  jmf0067  klp0036  mgb0045	pal0010  sds0025  tzk0024
+acw0049  bbs0012  cld0057  egd0008  iaa0003  jmg0021  klr0038  mgc0039	pam0020  sds0032  tzo0008
+acw0078  bbs0013  cld0060  egf0015  iaj0001  jmg0047  klr0046  mgd0026	pan0010  sdt0031  tzp0036
+adb0047  bcb0063  cle0011  egi0002  ial0005  jmg0094  kls0054  mgd0027	pao0003  sdw0023  tzp0040
+adc0034  bcb0065  clf0036  egk0014  iam0002  jmh0061  klt0028  mgd0028	par0018  sdw0025  tzr0012
+adc0035  bcb0067  clg0043  egl0014  iar0002  jmh0070  klt0032  mgd0030	pas0016  sdw0027  tzt0019
+ade0018  bcb0072  clh0075  egm0020  ias0006  jmh0087  klw0031  mge0013	pas0028  seb0109  tzt0036
+adf0018  bcc0023  clh0089  egm0029  ibp0002  jmh0103  klw0052  mgh0022	pas0033  sec0066  tzw0039
+adf0024  bce0001  clj0017  egs0007  icb0004  jmh0151  kmb0061  mgh0029	pas0037  see0025  tzx0010
+adg0032  bch0024  clj0018  egv0003  icf0001  jmh0172  kmb0086  mgj0005	pat0010  sef0039  tzx0016
+adh0033  bch0049  clj0020  eia0002  ick0002  jmh0174  kmc0102  mgj0016	pav0003  seh0042  tzy0017
+adh0037  bcm0033  cll0041  ejb0019  ida0001  jmj0031  kmc0113  mgj0017	pba0003  seh0071  tzz0020
+adh0055  bcm0035  clm0043  ejb0030  ids0002  jmj0055  kmd0030  mgj0018	pbb0011  seh0072  ujf0001
+adh0058  bco0002  clm0067  ejb0032  iek0001  jmk0030  kmd0058  mgj0020	pbb0012  sem0030  uzm0005
+adh0069  bcp0031  clm0082  ejb0044  ifs0001  jmk0031  kme0019  mgm0057	pbd0004  sem0039  vaa0005
+adk0021  bcr0022  clm0087  eje0012  igg0004  jml0077  kmh0030  mgs0020	pbh0005  sem0051  vas0006
+adl0033  bcs0030  clo0009  ejg0010  igg0006  jmm0122  kmh0056  mgs0031	pbw0009  sem0055  vas0012
+adm0059  bcs0048  clp0061  ejg0016  igs0001  jmm0145  kml0042  mgw0014	pcb0017  sem0073  vbd0002
+adp0025  bct0009  clp0062  ejh0026  igt0001  jmm0157  kml0061  mhb0031	pcd0008  sep0049  vbp0005
+adp0040  bcw0031  clr0054  ejh0032  ihk0002  jmm0179  kmm0112  mhc0016	pcd0009  ser0016  vbs0007
+adp0047  bda0011  clr0055  ejj0008  iib0001  jmm0181  kmm0116  mhd0007	pck0006  ser0045  vcs0007
+adp0055  bda0014  clt0042  ejk0017  ijl0001  jmm0182  kmm0123  mhd0010	pcl0006  ses0066  vda0001
+adr0019  bdb0021  clt0044  ejs0028  ijm0005  jmm0197  kmo0011  mhf0010	pco0003  ses0084  vfb0001
+adr0022  bdb0028  clt0047  ejs0040  ijr0003  jmn0033  kmo0018  mhg0017	pcs0016  ses0117  vgg0003
+adv0017  bdb0053  clv0007  ejs0041  ilt0001  jmo0025  kmr0047  mhk0011	pct0007  ses0132  vgr0003
+aeb0079  bdc0022  clz0001  ejs0050  ime0001  jmp0050  kms0104  mhl0021	pdc0007  set0028  vhk0001
+aeb0096  bdh0031  cma0037  ejs0053  ims0014  jmp0098  kms0107  mhm0034	pdc0010  set0034  vjw0005
+aeb0101  bdh0033  cmb0108  ejs0055  inh0003  jmr0055  kms0108  mhs0034	pdf0004  sew0033  vld0010
+aeb0105  bdh0038  cmb0149  ejs0064  ink0002  jmr0087  kmt0038  mhw0010	pdl0007  sew0081  vlj0006
+aeb0121  bdl0010  cmb0160  ejv0004  ioh0001  jmr0102  kmw0083  mhw0011	pdp0016  sfj0005  vll0003
+aed0015  bdl0012  cmb0164  ejw0042  irb0005  jms0015  knb0047  mhw0016	pdt0005  sgc0010  vlm0013
+aed0059  bdm0016  cmc0055  ekb0027  irk0004  jms0074  kne0015  mhw0019	pdw0009  sgl0016  vmc0010
+aef0025  bds0017  cmc0133  ekg0012  isp0002  jms0075  knf0019  mik0003	pee0003  sgm0008  vmf0002
+aef0042  bdt0006  cmc0174  ekh0017  itb0004  jms0085  knh0041  milescm	peg0012  sgo0005  vmk0007
+aeg0027  bdw0012  cmf0017  ekh0029  ith0004  jms0116  knl0022  mip0005	pej0005  sgp0010  vnn0003
+aeh0030  bdw0031  cmf0049  ekk0010  iuj0001  jms0118  knm0042  mis0008	pel0003  sgs0019  vpp0006
+aeh0089  bdw0033  cmg0037  ekl0013  iwc0001  jmt0031  knp0031  mja0034	pen0001  sgs0027  vvb0001
+aeh0097  bdw0036  cmh0118  ekp0023  iww0001  jmt0046  knr0023  mjb0036	pep0011  sgw0015  vvc0001
+aej0027  beb0048  cmh0130  elb0043  iza0010  jmt0065  kns0046  mjb0077	pgd0005  shb0033  vwh0001
+ael0062  bec0022  cmh0141  eld0012  izd0007  jmw0072  knw0038  mjb0082	pgk0005  shc0013  vza0011
+aem0058  bef0006  cmj0017  elh0024  izh0013  jmw0091  knz0001  mjb0084	pgm0006  shh0015  vzd0012
+aeo0015  bej0012  cmj0026  elh0046  izj0003  jmw0106  kohouwd  mjd0016	pgp0004  shk0008  vze0006
+aep0028  bek0017  cmk0035  elj0017  izl0002  jmw0119  kpk0005  mjf0027	pgs0003  shl0015  vzf0003
+aer0028  bel0017  cmk0037  ell0029  izr0003  jmw0125  kpm0031  mjg0034	pgw0003  shp0016  vzf0005
+aes0063  ber0017  cmk0066  elm0038  izt0006  jmw0142  kpv0001  mjh0024	phc0002  shw0012  vzn0014
+aes0090  bet0007  cml0039  elr0014  izv0008  jmz0005  kpw0009  mjh0058	phd0007  shw0013  vzs0024
+aev0005  bew0020  cml0060  els0042  jaa0023  jnb0017  kpw0016  mjh0067	phh0009  shy0002  vzs0026
+aew0041  bew0035  cml0067  els0046  jaa0034  jnc0023  kra0015  mjh0071	phr0005  sif0002  vzs0036
+aew0073  bfb0008  cmm0070  elt0012  jaa0059  jnc0033  krb0035  mjj0021	phs0005  sir0002  wab0021
+aew0078  bfj0003  cmm0074  ema0034  jab0088  jnf0006  krb0070  mjk0017	pjb0016  sjb0046  wac0015
+aey0011  bfr0006  cmm0146  emb0034  jab0099  jnl0020  krc0045  mjk0041	pjb0020  sjg0024  waf0005
+afb0018  bga0008  cmn0015  emb0071  jab0165  jnm0042  krd0015  mjl0045	pjc0010  sjg0026  waf0007
+afb0024  bgb0010  cmp0057  emc0057  jab0177  jnp0021  kre0006  mjm0040	pjc0017  sjh0035  wag0022
+afc0010  bgb0018  cmp0068  emd0033  jab0179  jns0044  krf0010  mjm0096	pjc0023  sjh0036  waj0009
+afe0006  bgw0008  cmp0087  eme0014  jab0182  jnt0011  krf0019  mjm0104	pjg0010  sjj0009  wak0004
+afm0004  bgw0009  cmr0047  eme0020  jab0185  joa0004  krg0031  mjm0118	pjm0019  sjk0020  wal0011
+afr0011  bhd0006  cmr0099  emg0038  jac0078  job0007  krh0049  mjo0006	pjo0003  sjm0018  wam0009
+afw0008  bhf0004  cms0100  emh0038  jac0083  jof0002  krj0011  mjp0019	pjr0009  sjo0005  wam0024
+agb0035  bhf0005  cms0122  emh0052  jac0088  joh0009  krk0010  mjp0048	pjr0010  sjp0019  wam0026
+agb0054  bhh0006  cms0139  emh0054  jac0090  johnsza  krk0026  mjp0060	pjr0023  sjr0022  wan0006
+agc0021  bhj0005  cms0147  emh0058  jac0097  jor0005  krm0034  mjs0045	pjs0022  sjs0022  wap0016
+agc0037  bhk0006  cmt0020  emk0016  jac0098  jot0003  krm0045  mjs0078	pjw0013  sjt0028  war0011
+agd0004  bho0001  cmt0047  emn0019  jac0150  jot0004  krm0051  mjs0092	pkm0007  sjw0045  was0033
+agd0013  bhr0009  cmw0043  emo0004  jad0042  jpa0008  krm0055  mjt0017	pkw0005  skd0008  waw0004
+agd0022  bhv0003  cmw0096  emp0054  jad0047  jpa0010  krp0004  mjt0020	plb0010  skg0005  wbc0008
+agd0025  bhw0010  cnb0021  emr0029  jad0054  jpb0037  krr0012  mjw0032	plc0006  ski0005  wbd0013
+agh0047  bjb0046  cnb0029  emr0037  jad0061  jpb0044  krs0035  mjw0047	plc0012  skj0013  wbf0007
+agl0012  bjb0056  cnb0030  ems0029  jad0062  jpb0049  krt0004  mjw0054	plg0015  skm0044  wbg0004
+agm0028  bjc0027  cnb0032  ems0059  jad0071  jpb0055  krw0042  mjw0060	plh0011  skm0046  wbg0010
+agm0043  bje0004  cnb0036  ems0070  jad0072  jpb0057  ksc0030  mjw0061	plj0005  skp0024  wbh0016
+agm0058  bjg0018  cnc0048  emt0011  jae0036  jpb0060  ksg0015  mkb0005	plr0008  sks0033  wbh0025
+agp0021  bjg0019  cnd0011  emt0015  jaf0057  jpb0061  ksg0021  mkc0017	pmb0012  slb0062  wbh0027
+agr0027  bjg0023  cng0022  emt0019  jag0050  jpc0026  ksg0023  mkc0041	pmb0025  slc0029  wbk0002
+agw0027  bjh0021  cnr0017  emv0002  jag0065  jpc0051  ksh0033  mkc0049	pmc0009  slc0052  wbl0004
+agw0037  bjh0025  cns0022  emw0034  jag0078  jpd0010  ksj0012  mke0010	pmc0011  sld0040  wbs0009
+ahc0004  bjh0035  cnv0004  emw0041  jag0094  jpd0034  ksl0013  mkg0031	pmc0016  slh0024  wbs0014
+ahd0006  bjh0055  cod0003  emw0051  jah0087  jpf0018  ksl0018  mkg0039	pmc0017  slh0047  wbs0016
+ahe0003  bjh0056  com0009  enb0017  jah0096  jph0020  ksl0020  mkk0017	pmk0007  slj0024  wbs0017
+ahh0009  bjh0057  cor0002  end0006  jah0106  jph0027  ksm0033  mkl0011	pmm0023  slk0026  wbs0021
+ahh0013  bjj0011  cor0004  enh0019  jah0141  jph0044  ksm0038  mkl0012	pmm0027  sll0029  wca0006
+ahh0018  bjm0005  cpb0007  enw0010  jah0147  jpj0013  ksw0022  mkm0042	pmr0010  slm0088  wcb0022
+ahl0009  bjm0039  cpb0031  enw0017  jah0153  jpk0033  ksw0027  mkm0049	pmr0019  slm0094  wcg0013
+aho0003  bjo0009  cpb0033  eog0003  jah0163  jpl0028  ksy0002  mkm0075	pnh0013  slp0023  wch0017
+ahr0015  bjs0040  cph0014  epc0009  jah0171  jpm0015  ktd0010  mkp0031	poj0002  slp0042  wcl0010
+ahr0016  bjs0047  cpp0012  epd0005  jak0031  jpm0030  kth0012  mkr0036	portilm  slp0044  wcm0024
+ahs0016  bjt0013  cps0013  epg0008  jak0037  jpm0051  ktn0001  mks0052	ppc0001  slr0042  wcm0030
+aht0010  bjw0023  cps0018  eph0011  jak0057  jpm0055  ktr0009  mks0075	prb0009  slr0048  wcp0006
+aik0005  bjy0001  cpt0016  eph0012  jak0063  jpq0002  kucukhu  mkt0020	prc0008  slw0051  wcr0010
+aiw0005  bkb0019  cpt0019  epl0006  jak0064  jpr0021  kvb0007  mkt0023	prc0012  slw0060  wcr0011
+aja0037  bkg0005  cpw0011  erc0018  jal0051  jpr0030  kvp0006  mky0004	pre0003  smb0065  wcs0019
+ajb0052  bkm0019  crawfsj  ere0008  jal0057  jps0035  kwg0001  mlb0050	prg0008  smb0073  wcs0032
+ajb0054  bkp0009  crb0081  ere0009  jam0084  jps0041  kyc0001  mlb0055	prj0005  smb0110  wcs0039
+ajb0060  bkr0005  crc0051  erf0021  jam0098  jps0044  kye0001  mlb0081	pro0001  smb0128  wct0012
+ajb0066  bkr0008  crc0056  erg0027  jam0118  jpt0016  kza0020  mlb0115	prr0007  smb0134  wcw0014
+ajb0068  bks0015  crf0027  erh0026  jam0137  jpt0022  kza0034  mlb0126	psb0010  smd0011  wcw0020
+ajb0098  bkw0017  crg0046  erj0004  jam0138  jpt0027  kzb0023  mlc0074	psb0016  smd0023  wcw0022
+ajb0128  blb0034  crh0061  err0010  jam0213  jpt0028  kzb0030  mld0021	psc0007  smd0029  wcw0026
+ajc0009  blb0051  crj0020  ers0022  jam0214  jpv0011  kzb0066  mld0040	psl0010  smd0041  wdb0011
+ajc0016  blf0005  crj0021  ert0018  jan0011  jpw0032  kzc0070  mld0060	psm0016  sme0006  wdc0008
+ajc0068  blf0011  crj0024  esb0018  jao0012  jpw0036  kzd0037  mlf0044	pss0016  sme0016  wdc0017
+ajf0034  blg0009  crk0029  esd0007  jap0031  jpw0043  kzg0015  mlh0054	pss0021  smf0015  wdm0021
+ajf0039  blg0017  crl0021  esl0008  jap0041  jrb0049  kzg0021  mlh0094	pta0002  smg0061  wdr0011
+ajg0042  blj0009  crl0034  esm0012  jap0053  jrb0086  kzg0037  mlj0016	ptb0004  smh0070  wdr0014
+ajh0031  blj0014  crm0042  esm0026  jap0074  jrb0099  kzg0040  mlj0018	ptc0010  smh0089  wdr0015
+ajh0050  blj0019  crm0071  ess0010  jap0075  jrb0117  kzl0055  mlj0032	ptg0003  smh0096  wdr0019
+ajh0067  blp0012  crp0009  esw0007  jap0078  jrb0133  kzl0057  mlm0028	ptl0006  smj0026  wds0002
+ajh0085  blp0018  crq0002  esw0008  jap0085  jrc0070  kzl0066  mlm0109	ptp0012  smj0038  wds0011
+ajh0100  blr0020  crs0088  esw0011  jaq0003  jrc0071  kzm0021  mlm0125	pts0006  sml0028  wef0003
+ajh0102  bls0031  crs0095  etb0007  jar0065  jrc0084  kzm0074  mlm0158	ptz0001  smm0049  wef0005
+ajj0012  bls0033  crv0014  etc0008  jar0074  jrc0102  kzn0017  mlr0057	pwa0004  smm0083  wel0005
+ajj0017  bls0045  crv0015  etd0009  jar0078  jrd0048  kzs0085  mls0075	pwl0001  smp0047  wes0012
+ajj0022  bls0046  crw0056  etg0004  jar0083  jrd0053  kzs0091  mls0078	pwm0012  smp0055  wes0018
+ajj0031  bls0053  crw0066  etk0004  jar0096  jrd0054  kzt0023  mlu0001	pyl0002  smp0058  wfc0003
+ajk0044  bma0006  csb0023  etl0008  jar0117  jrf0021  kzv0018  mlv0004	pyp0001  sms0107  wfe0002
+ajm0050  bma0028  csb0044  etm0006  jas0086  jrg0053  kzw0042  mlw0032	pzb0017  sms0110  wfh0011
+ajm0056  bmb0028  csc0043  etn0009  jas0092  jrg0058  kzw0048  mlw0040	pzh0026  smt0048  wfj0002
+ajm0079  bmb0057  csc0044  etr0012  jas0093  jrg0060  kzw0049  mlw0086	pzh0032  smw0036  wfm0007
+ajm0096  bmc0030  csd0022  etv0001  jas0132  jrg0061  kzw0060  mma0019	pzl0026  smw0084  wfp0003
+ajm0105  bmc0051  csf0011  evc0002  jas0146  jrh0080  kzx0012  mmb0025	pzl0027  snb0029  wfs0005
+ajm0117  bmd0018  csg0008  ewd0005  jas0152  jrh0101  kzy0021  mmb0036	pzl0029  sng0012  wgc0013
+ajo0002  bmd0020  csh0012  ewd0007  jas0157  jrh0102  kzy0022  mmc0023	pzl0032  snj0005  wgd0007
+ajp0028  bmd0036  csj0012  ewg0006  jas0191  jri0004  laa0015  mmc0038	pzm0034  snk0011  wgd0012
+ajq0002  bme0012  csj0020  ewh0006  jas0198  jrj0024  laa0036  mmc0040	pzp0038  sns0011  wgk0004
+ajr0021  bmf0029  csk0008  ewp0002  jas0208  jrj0029  lab0041  mmc0047	pzs0058  snt0015  wgm0016
+ajr0037  bmh0037  csk0010  eww0009  jau0005  jrj0037  lab0070  mmc0067	pzt0011  sos0006  wgw0006
+ajr0055  bmj0022  csm0043  eyr0001  jav0011  jrj0039  lab0079  mmd0039	pzt0012  spa0009  wgw0010
+ajr0068  bml0015  csr0026  eza0026  jaw0055  jrk0016  lac0031  mmf0031	pzz0014  spb0030  whb0007
+ajs0075  bmm0030  css0021  ezb0041  jaw0057  jrk0027  lad0030  mmf0047	pzz0016  spb0032  whb0015
+ajs0083  bmm0041  css0022  ezb0059  jaw0074  jrl0018  lag0040  mmg0065	qdh0003  spd0016  whb0016
+ajs0091  bmm0043  css0038  ezc0019  jaw0085  jrl0049  lah0049  mmm0060	qhc0001  spe0003  whb0018
+ajs0098  bmm0045  css0049  ezc0052  jaw0116  jrl0058  laj0020  mmo0010	qki0001  spf0012  whb0022
+ajs0134  bmm0047  csu0001  ezg0015  jaw0119  jrl0066  laj0021  mmo0011	qmr0001  spg0018  whb0028
+ajw0048  bmp0026  csv0002  ezg0027  jaw0120  jrm0069  lak0027  mmp0017	qrb0001  spj0006  whc0011
+ajw0056  bmr0014  csw0035  ezh0031  jaw0128  jrm0108  lak0030  mmp0058	qrp0001  spm0020  whc0012
+ajw0070  bmr0033  csw0044  ezh0036  jba0023  jrn0011  lal0023  mmr0013	qth0001  spm0029  whc0013
+akb0044  bms0025  csw0054  ezk0029  jbb0073  jrn0012  lal0024  mmr0033	qts0002  spo0005  whc0019
+akb0053  bms0029  csw0055  ezn0018  jbc0032  jro0008  lam0083  mms0071	qza0003  spp0015  whd0010
+akb0055  bms0039  csz0001  ezs0054  jbc0038  jro0023  lam0097  mms0082	qzq0002  sps0038  whf0006
+akd0044  bms0042  cta0008  ezy0013  jbc0060  jrp0024  lar0026  mms0100	qzw0013  spt0008  whh0014
+akh0047  bms0043  ctc0030  ezz0006  jbc0062  jrp0032  las0008  mmw0018	qzy0013  sra0025  whh0015
+akj0013  bmt0015  ctc0049  fay0001  jbc0066  jrp0033  lav0007  mmw0049	qzz0022  srb0025  whl0006
+akj0024  bmt0031  ctc0053  fbb0001  jbd0023  jrp0036  law0031  mna0014	qzz0024  srb0028  whp0006
+akk0015  bmw0043  ctd0012  fbm0004  jbe0010  jrp0054  law0041  mnb0016	qzz0028  srb0044  wht0004
+akl0029  bmw0050  ctd0022  fca0002  jbe0011  jrp0055  law0053  mnc0011	qzz0029  srb0045  whw0015
+akl0031  bmw0082  ctd0024  fcf0001  jbe0013  jrp0058  law0054  mnc0031	qzz0030  src0030  whw0016
+akl0036  bna0003  cte0005  fdd0004  jbe0015  jrp0063  law0055  mnh0022	rab0042  src0034  wintecd
+akm0026  bna0014  ctf0010  fds0005  jbe0017  jrp0072  law0063  mnk0004	rac0030  src0061  wja0007
+akm0066  bnp0007  ctf0014  fef0002  jbf0029  jrq0003  laz0004  mnm0043	rac0042  srg0010  wjb0029
+akn0004  bnw0016  ctg0012  fgb0004  jbg0017  jrr0036  lba0005  mnm0048	rac0053  srh0034  wjd0009
+akn0005  bof0001  cth0021  fgl0001  jbg0035  jrs0022  lbb0012  mnm0055	rac0056  srh0036  wjd0011
+akp0020  bpb0010  ctl0008  fis0002  jbh0056  jrs0069  lbb0025  mnr0021	rad0040  sri0004  wjf0012
+aks0047  bpd0003  ctl0011  fjb0007  jbh0058  jrs0073  lbe0005  mns0025	rae0006  srk0016  wjg0012
+aks0056  bpf0013  ctm0020  fjc0004  jbh0078  jrs0104  lbg0014  mob0007	raf0023  srm0030  wjh0022
+aks0077  bpk0003  ctm0053  fjl0004  jbi0002  jrs0142  lbm0015  mog0002	raf0031  srm0041  wjm0014
+akt0022  bpk0004  ctn0007  fka0002  jbl0022  jrs0147  lbo0003  mok0007	rag0016  srm0043  wjm0021
+alb0069  bpl0009  cto0004  fma0007  jbl0029  jrs0164  lca0009  mom0007	rag0035  sro0001  wjn0006
+alb0082  bpm0010  cto0005  fmb0008  jbm0036  jrt0022  lcb0025  mpa0012	rah0052  srp0014  wjp0015
+alb0083  bpm0011  ctp0006  fmb0010  jbm0069  jrv0016  lcc0013  mpb0028	raj0029  srp0038  wjp0016
+alb0101  bpm0021  ctp0011  fmc0003  jbo0008  jrw0080  lcd0019  mpc0024	rak0016  srr0010  wjs0013
+alb0131  bpp0008  cts0038  fmn0003  jbp0034  jrw0086  lcg0010  mpd0005	rak0017  srr0018  wjs0023
+alb0154  bpt0006  ctv0002  fqb0001  jbr0014  jrw0091  lcg0021  mpd0007	ram0076  srs0040  wjw0008
+alc0076  brb0035  ctv0003  freezkj  jbr0019  jsc0044  lcg0025  mpg0017	ram0085  srs0059  wjw0023
+alc0091  brb0045  ctw0023  frl0002  jbs0039  jsc0054  lch0017  mpk0015	ram0088  srs0077  wkj0007
+alc0095  brb0046  cvm0014  fsd0003  jbs0044  jsd0017  lch0039  mpm0020	rap0036  srv0005  wkm0009
+ald0050  brc0021  cvn0004  fst0003  jbs0058  jsd0026  lck0020  mpm0022	rap0042  srw0015  wko0001
+ald0074  brd0006  cvs0007  ftw0001  jbs0060  jsf0019  lcn0009  mpm0042	rap0050  srw0038  wlb0007
+alf0047  brj0011  cwc0039  fultowd  jbt0016  jsh0068  lcp0019  mpm0051	rar0025  ssa0005  wle0003
+alf0050  brookjc  cwd0021  fwc0002  jbt0017  jsh0069  lcr0020  mpp0017	rar0026  ssc0008  wlf0005
+alf0056  brp0009  cwg0005  fwh0003  jbt0018  jsj0024  lcr0029  mps0016	rar0028  ssd0014  wlp0007
+alf0060  brp0022  cwh0009  fzb0021  jbt0019  jsk0024  lcs0029  mps0026	ras0053  sse0005  wmc0012
+alg0031  brr0013  cwh0016  fzl0011  jby0007  jsk0027  lct0011  mqr0001	ras0058  ssh0018  wmh0009
+alg0051  brr0021  cwh0023  fzl0014  jca0008  jsl0035  lct0016  mra0033	ras0080  ssk0009  wmk0008
+alh0065  brs0009  cwh0027  fzl0018  jca0028  jsm0035  ldd0007  mrb0078	ras0090  ssl0008  wmk0014
+alh0080  brs0023  cwl0018  fzm0021  jca0029  jsm0062  ldg0014  mrb0081	rbb0024  ssl0013  wmp0009
+alh0103  brt0012  cwm0038  fzs0018  jca0039  jsm0063  ldp0012  mrb0094	rbc0030  ssm0024  wms0015
+alh0133  brw0023  cwm0042  fzs0019  jca0041  jsm0068  ldp0017  mrc0033	rbc0035  ssm0036  wms0020
+ali0005  bsg0012  cwp0024  fzs0020  jcb0054  jsm0071  led0028  mrc0042	rbj0010  ssv0004  wnc0006
+alj0033  bsh0018  cwr0010  gaa0004  jcb0098  jso0018  lef0017  mrc0063	rbl0011  ssy0001  wnm0004
+alj0035  bsj0011  cxc0002  gaa0014  jcb0142  jsp0030  leh0023  mrf0039	rcb0020  stb0018  wns0006
+all0061  bsl0013  cxh0002  gab0021  jcc0061  jsp0034  leh0030  mrg0039	rcb0042  ste0004  woh0003
+alm0081  bsm0020  cza0025  gab0022  jcc0088  jsp0037  leh0048  mrh0039	rcb0043  sternli  wos0005
+alm0102  bsm0025  czc0075  gab0033  jcc0092  jsp0045  lel0020  mrh0081	rcb0053  sth0006  wpd0004
+alm0116  bso0002  czc0092  gaf0012  jcc0094  jsp0047  lel0048  mrj0013	rcc0036  sth0018  wpg0004
+alm0121  bsr0011  czc0102  gaf0019  jcc0096  jsr0038  lel0051  mrl0043	rcc0046  sth0019  wph0007
+alm0125  bss0028  cze0025  gag0018  jcc0103  jsr0039  lem0029  mrm0066	rcc0047  sth0027  wpm0002
+alp0023  bst0019  czf0029  gak0009  jcc0114  jss0027  lemaimr  mrp0019	rcc0048  stm0019  wpm0011
+alp0048  bsw0015  czg0046  gak0011  jcd0034  jss0037  ler0037  mrp0048	rcc0049  stp0007  wpm0013
+als0065  btd0009  czg0059  gal0020  jcd0037  jss0040  ler0054  mrs0034	rcd0023  stp0011  wpp0002
+als0098  btg0012  czh0087  gam0029  jcd0042  jss0054  les0038  mrt0006	rce0004  str0005  wpp0006
+als0101  btl0009  czh0091  gap0014  jcd0059  jss0071  les0050  mrt0030	rce0005  str0008  wpp0007
+als0104  btn0004  czj0011  gap0016  jce0009  jss0074  les0058  mrt0031	rcf0007  str0012  wpq0001
+als0105  btp0013  czk0039  gas0026  jce0021  jst0015  les0082  mrv0008	rcg0020  sts0016  wpt0005
+als0116  bts0015  czk0048  gat0006  jcf0019  jsw0017  let0018  mrv0009	rcg0023  sts0021  wpw0011
+als0122  burchrc  czk0049  gav0003  jcf0020  jsw0021  lew0051  mrw0033	rch0019  sts0027  wpy0001
+alt0040  burtash  czl0109  gaw0024  jcf0021  jta0026  lfd0005  msb0066	rcj0010  stt0007  wrb0020
+alt0049  buskebd  czm0078  gaw0028  jcf0023  jtb0020  lfr0005  msc0045	rck0011  stw0026  wrb0027
+alw0048  bva0003  czm0089  gbg0008  jcf0032  jtb0033  lfs0009  msd0034	rcm0051  svb0002  wre0004
+alw0061  bvc0003  czm0099  gbl0002  jcg0045  jtb0045  lfw0005  mse0010	rco0009  swc0018  wrg0007
+alw0086  bwb0022  czm0114  gbm0004  jcg0065  jtb0056  lgf0003  mse0011	rcp0021  swd0008  wrh0018
+alw0088  bwc0016  czm0118  gbm0010  jcg0068  jtb0063  lgg0006  msh0063	rcr0017  swe0003  wrh0021
+ama0038  bwi0003  czo0007  gcc0016  jch0091  jtb0069  lgk0003  msl0011	rcr0025  swf0005  wrm0021
+ama0075  bwj0005  czp0049  gcc0031  jch0114  jtb0070  lgp0008  msl0031	rcs0031  swk0005  wrp0008
+amb0089  bwl0010  czt0038  gcd0006  jch0127  jtb0080  lgs0012  mso0007	rcw0006  swl0012  wrw0017
+amb0171  bwl0011  czw0033  gcg0007  jch0138  jtb0088  lgs0015  msr0018	rcw0015  sws0005  wsa0006
+amc0169  bwm0012  czw0050  gch0012  jcj0045  jtb0106  lgs0018  mss0022	rdb0023  sws0020  wsb0010
+amd0033  bwm0017  czw0074  gch0017  jck0017  jtc0035  lgv0001  mss0031	rdb0031  swt0011  wsb0013
+amd0087  bza0017  czw0080  gch0019  jcl0039  jtc0063  lgw0015  mss0062	rdb0039  sza0073  wsb0018
+amd0119  bza0022  dab0062  gch0029  jcl0047  jtc0076  lhb0027  mss0066	rde0002  szb0058  wsb0020
+amd0133  bza0031  dab0065  gcl0008  jcl0051  jtd0026  lhe0001  msu0001	rde0006  szb0121  wsh0005
+ame0022  bzb0036  dac0028  gcm0019  jcl0052  jtd0034  lhf0004  msw0041	rdm0019  szb0127  wsm0008
+ame0036  bzb0071  dac0035  gcm0022  jcm0048  jte0009  lhs0014  mtb0071	rdn0003  szc0136  wsm0018
+amf0026  bzc0054  dac0043  gcn0002  jcm0065  jte0019  ljb0021  mtc0026	rdn0005  szf0032  wsn0002
+amf0055  bzj0013  dad0026  gcs0017  jcm0083  jte0021  ljb0040  mtc0034	rdt0016  szg0054  wsp0006
+amf0059  bzl0065  dad0037  gcs0018  jcm0102  jte0026  ljb0041  mtc0039	rdw0019  szg0090  wtb0010
+amf0063  bzm0044  daf0012  gdd0005  jcm0112  jtf0033  ljd0017  mtc0047	rdw0025  szg0095  wtb0019
+amg0105  bzm0048  daf0018  gdd0007  jcn0007  jtg0040  ljd0020  mtd0019	rdz0003  szh0067  wtc0010
+amg0115  bzn0008  daf0020  gdf0010  jcn0027  jtg0043  ljh0017  mtd0020	reb0038  szh0094  wtc0017
+amg0117  bzo0013  dag0026  gdk0001  jcp0034  jtg0045  ljh0021  mtf0012	rec0027  szh0121  wte0008
+amh0129  bzp0021  dam0015  gdl0004  jcp0039  jtg0051  ljh0026  mtg0015	rec0028  szh0130  wth0018
+amh0154  bzp0028  dap0044  gds0013  jcp0041  jtg0054  ljj0015  mth0012	rec0039  szk0128  wth0023
+amh0164  bzr0026  dar0034  gds0015  jcp0050  jth0078  ljm0019  mth0041	red0013  szk0131  wth0026
+amh0167  bzw0022  dar0043  gds0019  jcp0053  jth0081  ljn0007  mtk0018	reh0018  szl0072  wtm0016
+amh0178  bzy0022  dar0048  gdt0003  jcr0034  jtj0014  lkc0023  mtm0035	reh0043  szl0097  wtp0002
+ami0012  bzz0005  daw0024  gdw0002  jcr0053  jtj0029  lkh0018  mtm0037	rek0005  szl0113  wtr0005
+amj0032  cab0103  daw0048  gdw0003  jcr0060  jtl0012  lkh0024  mtm0048	rem0045  szl0127  wts0020
+amj0034  cab0124  day0011  geb0021  jcr0061  jtl0017  lkp0011  mtp0013	rem0064  szl0133  wtw0013
+amk0021  cab0125  day0012  geb0024  jcs0068  jtl0025  lks0023  mtp0030	rep0015  szl0138  wwd0005
+amk0074  cac0085  dbb0013  geh0009  jcs0073  jtl0041  lkt0002  mts0025	rep0017  szl0148  wwt0003
+amk0087  cac0141  dbd0013  geh0015  jcs0075  jtl0042  llb0004  mts0040	rep0027  szl0155  wyc0001
+amk0092  cac0148  dbf0009  geh0017  jcs0088  jtl0048  llc0011  mtv0010	res0034  szm0069  wza0006
+aml0064  cad0032  dbg0013  geh0021  jcs0101  jtm0042  lll0016  mum0001	res0042  szm0118  wza0008
+aml0082  cae0010  dbh0015  geigedl  jcs0109  jtm0043  llm0031  musgrdw	res0050  szn0045  wzb0032
+aml0093  cae0017  dbk0011  gek0009  jcv0014  jtm0048  lln0004  mvb0009	ret0016  szn0046  wzc0030
+aml0094  cag0041  dbr0005  geo0002  jcw0038  jtm0089  lmb0040  mwa0008	rew0033  szo0013  wzf0005
+amm0133  cag0052  dbs0016  gfb0006  jcw0062  jtm0090  lmb0073  mwb0036	rfa0004  szp0111  wzg0025
+amm0153  cag0068  dbt0009  gfs0005  jcw0071  jtm0094  lmb0080  mwb0041	rfp0006  szp0115  wzh0021
+amm0162  cag0069  dcd0018  gge0001  jcw0078  jtp0025  lmc0065  mwb0045	rfs0012  szp0116  wzh0035
+amm0188  cah0040  dcd0020  ghg0002  jda0041  jtp0027  lmd0042  mwc0015	rgb0009  szp0121  wzk0015
+amn0025  cah0041  dcg0008  ghk0001  jda0044  jtr0035  lmg0033  mwf0013	rgb0019  szr0052  wzl0036
+amo0022  cah0064  dcg0014  ghk0004  jdb0049  jts0047  lmg0040  mwf0017	rgb0021  szr0053  wzl0044
+amo0024  cah0077  dcj0011  ghl0007  jdb0055  jts0049  lmg0045  mwj0010	rgd0005  szs0105  wzq0002
+amp0062  cah0095  dck0004  ghs0009  jdb0056  jts0068  lmh0029  mwl0009	rge0002  szs0147  wzs0020
+amp0067  cah0105  dcm0031  ght0003  jdb0097  jts0079  lmh0040  mwn0008	rgg0005  szs0191  wzs0023
+amp0087  cah0110  dcm0044  gik0003  jdb0119  jtv0008  lmh0047  mwp0009	rgm0013  szs0201  wzs0029
+amp0095  cah0120  dcm0046  gil0001  jdb0123  jtv0010  lmh0054  mwp0012	rgr0006  szt0033  wzt0011
+amp0101  cah0121  dcm0049  gizmo    jdb0127  jtw0027  lmh0087  mws0025	rgw0005  szt0056  wzw0021
+amp0111  cah0123  dcp0017  gjh0008  jdb0131  jtw0049  lmi0003  mws0031	rha0008  szv0033  wzw0038
+amq0002  cai0004  dcp0022  gjm0020  jdb0155  jtw0066  lmj0017  mws0037	rhb0007  szv0041  wzz0024
+amr0038  caj0006  dcp0023  gjs0007  jdc0031  jtw0076  lmk0018  mwy0003	rhc0015  szv0042  wzz0030
+amr0094  caj0022  dcr0022  gjs0012  jdc0044  jty0002  lmk0020  myg0003	rhe0004  szw0088  xds0001
+amr0104  caj0027  dcs0009  gjs0017  jdc0052  jvw0005  lmm0032  myt0002	rhh0013  szw0105  xgr0001
+ams0021  caj0037  ddc0015  gjw0003  jdc0069  jwa0014  lmm0037  mza0036	rhl0008  szx0012  xjc0001
+ams0091  caj0039  ddc0018  gjw0010  jdc0081  jwb0036  lmo0009  mza0081	rhn0002  szy0020  xzg0015
+ams0095  cak0040  ddd0021  gkb0008  jdd0025  jwb0046  lmp0049  mza0099	rhs0012  szz0009  xzg0018
+ams0102  cak0057  ddg0004  glc0013  jde0021  jwb0080  lms0058  mza0105	rhw0016  szz0031  xzh0038
+ams0132  cal0029  ddg0008  gld0004  jde0024  jwc0036  lms0066  mza0143	ric0003  szz0032  xzh0039
+ams0144  cal0034  ddl0010  glh0012  jde0029  jwc0045  lms0072  mzb0091	rjb0026  szz0047  xzh0049
+ams0174  cal0043  ddm0016  glh0015  jdg0023  jwc0056  lmw0055  mzb0103	rjb0051  taa0015  xzj0021
+ams0179  cal0070  ddn0002  glo0005  jdg0058  jwd0016  lmw0073  mzc0062	rjc0022  tab0026  xzk0003
+ams0184  cam0071  dds0024  gmb0034  jdg0066  jwd0023  lna0006  mzc0105	rje0007  tag0006  xzl0069
+ams0192  cam0091  dea0009  gmc0010  jdh0044  jwd0024  lnl0012  mzc0110	rjf0016  tag0019  xzl0072
+amt0020  cam0111  deb0033  gmd0017  jdh0050  jwd0029  lns0023  mzd0027	rjf0019  tag0025  xzl0078
+amt0082  cam0113  dec0009  gme0003  jdh0064  jwe0018  loc0003  mzd0036	rjh0013  tag0030  xzl0085
+amw0042  cam0134  ded0016  gmg0017  jdh0072  jwf0019  lom0002  mzd0058	rjh0025  tah0040  xzm0016
+amw0062  cam0141  deg0018  gmk0004  jdh0084  jwg0024  lpm0011  mzd0075	rjk0012  tah0043  xzs0015
+amw0079  captaki  delanbp  gmm0025  jdh0094  jwg0025  lrb0030  mzf0031	rjk0022  tah0056  xzt0011
+amw0091  car0041  des0022  gmm0035  jdh0096  jwg0028  lrc0017  mzf0054	rjk0025  tah0059  xzw0050
+amw0107  car0053  deshadp  gms0029  jdj0019  jwh0047  lrf0012  mzg0019	rjm0024  tam0013  xzz0070
+amw0135  car0062  dew0013  gms0033  jdj0021  jwh0051  lrg0017  mzg0071	rjm0037  tam0058  yaa0004
+amy0012  caracma  dff0003  gmw0017  jdj0025  jwh0062  lrh0012  mzg0076	rjp0027  tam0061  ynm0001
+ana0011  cas0080  dfg0005  gnb0003  jdk0039  jwh0065  lrp0020  mzj0040	rjp0028  tam0063  yss0002
+ana0017  cas0169  dfg0008  gpb0014  jdk0042  jwh0077  lrt0012  mzj0043	rjs0031  tao0008  yvm0001
+anb0051  cat0022  dfj0002  gpb0015  jdl0006  jwh0078  lrw0018  mzk0073	rjs0037  tap0029  yza0016
+anc0019  cat0023  dfm0009  gpe0002  jdl0014  jwj0023  lsf0012  mzk0099	rjs0038  tar0011  yzb0010
+anc0057  cat0028  dfs0006  gpe0003  jdl0018  jwl0015  lsr0012  mzk0118	rjs0047  tar0025  yzc0095
+anc0077  cat0047  dgc0007  gps0009  jdl0031  jwm0027  lsr0013  mzl0046	rjt0007  tar0027  yzf0015
+and0029  cat0050  dgg0006  gps0010  jdl0038  jwm0031  lst0012  mzl0069	rkh0021  tas0026  yzf0016
+and0044  cat0063  dgi0001  gps0011  jdl0052  jwm0046  lst0013  mzl0076	rks0015  tas0034  yzf0020
+ang0011  cat0068  dgl0008  gpt0009  jdl0056  jwm0053  ltb0010  mzl0083	rkv0004  tas0045  yzg0033
+ang0035  cat0072  dgr0007  grd0006  jdl0060  jwm0059  ltb0013  mzl0097	rlb0052  tas0056  yzg0049
+anh0054  cat0075  dgt0004  grj0007  jdm0070  jwn0010  ltc0013  mzl0103	rlc0039  tat0012  yzh0056
+anh0062  cav0010  dhb0003  grl0009  jdm0098  jwo0010  lte0004  mzl0109	rlc0047  tatechr  yzh0072
+anh0080  cav0013  dhc0010  grm0021  jdm0108  jwp0019  ltf0009  mzm0104	rld0036  tba0014  yzj0029
+anj0021  caw0022  dhc0011  grs0012  jdm0124  jwp0025  lth0007  mzp0039	rlh0058  tbb0008  yzj0044
+anj0025  caw0038  dhf0005  grs0014  jdm0128  jwp0027  ltl0005  mzr0059	rll0004  tbb0016  yzk0050
+ank0016  caw0044  dhm0012  grt0001  jdm0129  jwp0030  ltp0008  mzs0080	rlm0035  tbc0016  yzk0062
+ank0031  caw0074  dixdani  grw0005  jdm0149  jwp0037  ltp0009  mzs0114	rlm0037  tbc0022  yzl0106
+anm0061  caw0086  djb0044  gsb0012  jdn0017  jws0026  lts0002  mzs0159	rlm0051  tbc0029  yzl0138
+ano0007  caw0091  djc0044  gsf0003  jdn0020  jws0030  ltv0002  mzt0023	rln0012  tbh0012  yzl0145
+anr0025  caw0101  djd0033  gsh0014  jdn0021  jws0031  lwc0002  mzv0019	rlr0017  tbh0017  yzl0156
+anr0045  caw0107  djf0010  gsh0016  jdo0008  jws0043  lws0015  mzv0020	rls0045  tbh0021  yzl0166
+ans0063  caz0005  djj0009  gsk0007  jdo0012  jwt0016  lwt0005  mzv0041	rls0065  tbm0026  yzl0175
+ans0077  cbb0050  djl0013  gsm0013  jdp0009  jwt0024  lzb0038  mzw0037	rls0072  tbp0008  yzl0180
+ant0013  cbb0057  djm0060  gst0005  jdp0040  jwt0033  lzc0022  mzw0073	rlz0001  tbr0012  yzl0184
+ant0023  cbd0009  djn0008  gst0006  jdp0061  jyl0003  lzc0034  mzx0006	rmb0042  tbt0006  yzl0191
+anw0033  cbd0021  djp0030  gtb0011  jdr0047  jza0045  lzc0065  mzx0009	rmc0051  tbt0010  yzl0214
+anw0056  cbf0009  djr0024  gtf0004  jdr0066  jza0056  lzd0036  mzy0009	rmd0025  tcb0032  yzm0023
+anz0006  cbf0017  djs0032  gth0019  jds0051  jzb0105  lzg0030  mzy0027	rmg0029  tcc0015  yzp0023
+aob0006  cbh0028  djs0035  gts0006  jds0056  jzb0136  lzg0033  mzy0030	rmh0052  tcd0022  yzr0011
+aoo0004  cbh0056  djt0018  gts0013  jds0060  jzb0137  lzg0034  mzz0027	rmk0028  tcf0008  yzs0036
+apc0023  cbj0010  djw0013  gts0014  jds0092  jzb0151  lzh0054  mzz0033	rml0015  tch0030  yzs0051
+apc0034  cbj0016  djw0045  gty0001  jds0112  jzc0098  lzj0021  mzz0035	rml0040  tch0032  yzs0055
+apf0011  cbl0010  dkc0005  gullers  jds0113  jzc0128  lzl0014  mzz0036	rmm0017  tck0015  yzs0058
+aph0017  cbo0006  dkd0010  gva0003  jds0114  jzc0159  lzl0035  mzz0038	rmm0018  tcl0011  yzt0040
+aph0028  cbr0026  dkg0010  gvo0001  jds0122  jzc0169  lzl0037  naa0011	rmm0026  tcm0023  yzt0047
+apm0029  cbr0032  dkh0015  gvv0001  jdt0049  jzc0178  lzl0046  nab0017	rmn0003  tcr0008  yzw0060
+apr0010  cbs0035  dko0002  gwc0014  jdu0002  jzd0053  lzl0064  nab0043	rmn0010  tcr0017  yzw0081
+apr0019  cbs0047  dks0023  gwh0007  jdu0005  jzd0057  lzl0078  nac0027	rmp0013  tcr0018  yzw0105
+apr0020  cbs0063  dkw0012  gwk0004  jdu0006  jzd0077  lzm0036  nad0017	rmp0034  tcr0021  yzx0041
+aps0045  cbs0064  dlb0019  gwo0003  jdw0008  jzd0080  lzm0045  naf0012	rmr0020  tcs0022  yzx0043
+aps0048  cbs0072  dlb0031  gwz0001  jdw0042  jzd0090  lzp0026  nak0009	rmr0036  tcs0030  yzy0056
+apv0002  cbt0006  dlb0042  gzb0027  jdw0048  jzf0047  lzs0076  nal0016	rms0049  tcw0026  yzy0070
+apw0027  cbw0037  dlb0046  gzc0010  jdw0053  jzf0048  lzs0078  nam0025	rmw0034  tcw0029  yzy0071
+aqv0001  ccb0044  dlb0054  gzd0018  jdw0091  jzg0074  lzw0023  nam0038	rmw0040  tdb0018  yzz0090
+ara0008  ccb0052  dlc0041  gzd0021  jdw0094  jzg0078  lzz0041  nam0041	rmz0001  tdb0021  yzz0113
+arb0044  ccc0034  dlc0047  gzf0013  jea0025  jzg0090  lzz0045  nao0003	rnb0003  tdb0038  yzz0119
+arb0074  ccc0045  dlc0049  gzh0020  jea0028  jzh0065  maa0035  nas0026	rnb0018  tdc0011  yzz0136
+arb0094  ccc0075  dlc0050  gzq0003  jeb0043  jzh0116  mab0041  naw0016	rnd0010  tdc0023  yzz0137
+arc0043  ccg0006  dld0043  gzs0025  jeb0081  jzh0159  mab0043  nba0002	rnl0003  tdc0029  zad0003
+arc0063  ccg0016  dlm0019  gzs0028  jeb0093  jzh0164  mab0060  nbc0007	rnl0007  tdg0019  zah0004
+arc0082  cch0031  dlm0037  gzs0033  jec0052  jzj0051  mab0100  nbc0011	rnw0012  tdg0020  zas0014
+ard0034  cch0054  dlr0014  gzy0005  jec0072  jzj0060  mab0160  nbh0008	roa0004  tdh0032  zbb0006
+arf0016  cci0002  dls0017  gzz0011  jed0035  jzj0068  mab0183  nbh0009	robucle  tdh0039  zbm0002
+arf0027  ccj0021  dls0026  haa0010  jed0037  jzj0070  mac0037  nbs0021	roedavi  tdl0021  zbm0004
+arg0041  ccl0010  dls0040  haf0002  jef0014  jzj0073  mac0098  nbw0010	rpb0018  tdm0028  zbp0003
+arg0054  ccm0033  dlt0022  haf0004  jef0020  jzj0085  mac0113  ncb0013	rpc0010  tdm0029  zcd0002
+arh0033  ccm0060  dlw0028  hah0035  jeg0020  jzk0089  mac0119  ncc0010	rpc0016  tdm0037  zcd0003
+arh0044  ccm0061  dlw0033  hal0013  jeg0033  jzk0095  mac0141  ncc0016	rpd0009  tds0041  zcr0004
+arh0080  ccm0069  dma0018  ham0010  jeh0031  jzl0107  mad0046  ncd0008	rpg0011  teb0031  zcs0006
+arh0087  ccr0018  dmb0052  ham0027  jeh0032  jzl0119  mad0056  ncf0009	rph0012  tec0029  zdc0001
+arh0093  ccr0034  dmb0061  ham0028  jeh0051  jzl0149  mad0065  ncm0004	rph0018  tek0008  zdh0004
+arj0004  ccr0037  dmb0079  hap0021  jeh0072  jzl0173  mae0020  ncm0023	rph0019  tek0010  zdl0001
+ark0014  ccr0040  dmb0087  hap0024  jeh0079  jzl0185  mae0021  ncp0015	rph0020  tek0015  zds0013
+arm0054  ccs0042  dmc0022  has0027  jek0017  jzl0197  mae0031  ncr0004	rps0019  tem0014  zdt0007
+arm0062  ccs0056  dme0011  hat0012  jek0024  jzm0024  maf0015  ncr0006	rpw0006  tem0016  zeh0006
+arm0086  ccs0058  dmg0032  hat0016  jek0026  jzm0033  maf0045  ncs0013	rpw0008  tem0022  zek0001
+arm0090  cct0010  dmh0032  hbe0002  jel0034  jzm0053  mag0038  ncs0016	rrb0016  teo0004  zel0002
+arm0097  ccw0036  dmj0023  hbj0006  jem0062  jzm0070  mag0058  ncv0002	rrb0024  tew0008  zew0002
+aro0005  ccw0049  dmk0013  hbk0009  jem0069  jzm0129  mag0083  ncw0021	rrd0010  tew0020  zgh0001
+arp0013  cda0004  dmk0016  hbl0004  jem0083  jzn0017  mag0087  ndc0011	rrf0003  tfg0003  zgt0001
+arp0023  cda0011  dmm0023  hbm0008  jem0086  jzn0019  mag0089  ndd0010	rrg0011  tfo0002  zgw0001
+arp0037  cdb0043  dmm0027  hbw0016  jeo0011  jzn0034  mah0026  nde0003	rrh0015  tgf0003  zhn0001
+arp0041  cdd0020  dmp0025  hch0031  jep0038  jzp0039  mah0077  ndf0007	rrr0018  tgg0007  zjb0009
+arp0046  cdd0034  dmr0017  hcl0008  jer0038  jzp0048  mah0078  ndg0013	rrs0013  tgh0004  zjd0003
+arp0061  cdd0035  dms0039  hcl0017  jer0049  jzp0073  maj0012  ndm0005	rrs0015  tgp0014  zjm0007
+arv0010  cde0009  dms0072  hcm0016  jes0093  jzp0076  maj0033  ndr0007	rrs0019  tgs0013  zjo0002
+arw0016  cdf0021  dnb0010  hcm0018  jes0098  jzp0089  mak0032  nec0010	rrw0011  tgt0005  zjp0006
+asa0029  cdg0026  dnc0024  hcp0006  jet0032  jzp0091  mak0053  neg0007	rsc0022  tgw0006  zjs0003
+asb0003  cdh0023  dne0003  hcp0010  jev0006  jzp0096  mal0028  neg0009	rsd0011  tgw0011  zlh0002
+asb0036  cdh0042  dnm0009  hcw0016  jev0007  jzq0007  mal0061  neg0014	rse0001  thh0008  zlm0004
+asb0047  cdh0055  dns0011  hdc0009  jew0026  jzr0037  mal0073  nej0007	rsf0015  thm0006  zlo0001
+asb0059  cdh0064  dns0018  hdc0011  jew0037  jzr0038  mam0147  nel0008	rsg0009  tht0004  zlr0003
+asb0061  cdm0054  doa0002  hdd0009  jfb0018  jzs0066  mam0148  nel0011	rsh0021  thw0018  zls0009
+asb0062  cdm0078  doh0001  hdf0001  jfb0028  jzs0071  mam0203  nfr0005	rsk0011  tin0002  zma0003
+asb0066  cdm0080  dom0003  hdf0005  jfb0029  jzs0080  mam0210  ngh0009	rsm0015  tja0012  zmc0005
+asc0021  cdn0006  dpb0011  hdh0013  jfc0011  jzs0088  man0012  ngn0002	rsm0023  tja0013  zmd0003
+asc0029  cdo0005  dpc0008  hdh0020  jfc0016  jzs0121  man0039  ngp0005	rsn0009  tja0023  zmj0002
+asc0046  cdp0017  dph0020  hdk0002  jfc0017  jzs0126  man0040  ngv0006	rsn0010  tjb0052  znn0001
+asg0035  cdp0037  dpp0006  hds0012  jff0006  jzs0130  mao0021  nhf0001	rsp0013  tjb0053  znt0001
+ash0019  cdp0043  dpr0004  hds0015  jfk0015  jzs0155  map0049  nhg0009	rsq0001  tjc0032  zoh0002
+ash0020  cds0032  dps0012  hds0019  jfp0016  jzs0166  map0072  nic0001	rsr0008  tjc0035  zpm0005
+asm0019  cds0034  dps0020  hea0010  jfp0018  jzs0178  mar0052  nim0001	rss0018  tje0005  zrl0002
+asm0020  cds0062  drb0029  heb0052  jfr0014  jzv0008  mar0064  nin0002	rsw0027  tjh0023  zrm0006
+asm0027  cds0070  drb0030  heh0031  jfs0016  jzv0016  mar0067  nja0004	rta0006  tjh0033  zrp0002
+asm0053  cds0075  drb0033  hek0017  jgd0003  jzw0045  mar0083  njb0010	rtb0020  tjh0052  zrr0006
+asm0064  cdt0029  drg0013  hensowi  jgd0006  jzw0085  mas0096  njg0005	rtc0024  tjh0055  zrt0003
+asp0011  cdw0043  drh0006  hes0036  jgd0015  jzw0111  mas0119  njg0011	rtd0010  tjj0007  zrw0007
+ast0035  cdw0050  drh0017  hes0054  jgf0015  jzw0121  mas0152  njg0013	rtf0004  tjj0013  zsn0001
+ata0017  cea0027  drj0007  het0021  jgg0011  jzx0035  mas0156  njn0002	rth0012  tjl0024  zsr0004
+atb0024  ceb0108  drj0014  hew0024  jgh0014  jzx0040  mas0176  njo0004	rth0030  tjm0004  ztb0004
+atb0033  ceb0116  drl0017  hey0002  jgh0020  jzy0071  mat0070  njr0010	rtm0023  tjm0025  ztg0003
+atc0014  cec0098  drm0045  hfe0002  jgh0023  jzz0048  maw0108  njr0013	rtm0024  tjm0027  zth0002
+atc0018  ceh0050  drp0009  hgb0006  jgk0008  jzz0057  maz0001  njr0015	rts0012  tjm0040  zti0003
+atc0025  ceh0091  drp0014  hgm0014  jgl0011  jzz0064  maz0006  njs0012	rts0018  tjm0041  ztm0013
+atc0040  ceh0094  drp0016  hgt0007  jgm0017  jzz0070  maz0012  njs0020	rtt0009  tjr0011  zts0011
+atd0021  ceh0109  drp0020  hhh0012  jgm0025  jzz0085  maz0017  njs0029	rtv0003  tjr0015  zts0012
+atf0006  ceh0110  drr0017  hhm0008  jgm0036  jzz0088  mbd0014  nju0002	rtw0013  tjr0023  zwp0004
+ath0021  ceh0112  drs0038  hhr0006  jgm0043  kab0080  mbg0022  nkh0003	rvm0003  tjr0030  zww0005
+atl0015  ceh0121  drs0053  hhs0007  jgm0046  kac0044  mbh0045  nkp0006	rvr0002  tjs0059  zzc0013
+atl0016  cej0028  drt0003  hicksgr  jgn0008  kad0048  mbj0016  nkv0002	rwb0013  tjs0063  zzc0014
+atl0024  cek0041  dsa0009  hjb0014  jgp0010  kad0068  mbk0014  nlb0019	rwg0010  tjt0020  zzc0030
+atl0026  cel0067  dsa0012  hjb0015  jgp0022  kad0070  mbl0019  nlb0025	rwg0012  tjt0028  zzc0033
+atm0012  cem0112  dsb0025  hjc0015  jgr0012  kaf0018  mbl0024  nlb0026	rwk0009  tjw0025  zzd0005
+atm0019  ceo0025  dsd0018  hje0002  jgr0021  kag0062  mbl0031  nlb0031	rwp0009  tjw0047  zzd0010
+atm0028  ceo0028  dsd0019  hjf0005  jgs0040  kah0036  mbm0029  nld0010	rwp0012  tka0006  zzf0010
+atm0029  cep0059  dse0003  hjh0020  jgw0023  kah0063  mbm0077  nlf0009	rws0017  tkb0009  zzh0024
+atp0025  ces0036  dsh0018  hjj0005  jhb0033  kah0072  mbn0009  nlg0007	rws0019  tkb0012  zzh0031
+atr0006  ces0102  dsj0005  hjk0005  jhb0035  kah0092  mbn0010  nlh0009	rws0030  tkc0011  zzh0032
+atr0025  ces0103  dsl0013  hjk0007  jhb0055  kaj0027  mbp0020  nll0005	rwz0001  tkh0006  zzk0005
+ats0001  cet0026  dsn0003  hjr0010  jhc0033  kak0033  mbp0029  nlr0007	ryp0003  tkk0004  zzk0007
+ats0052  cet0029  dsp0011  hjs0016  jhc0035  kak0064  mbp0030  nlr0014	rza0041  tla0010  zzl0041
+att0009  cet0038  dsp0018  hjw0012  jhc0036  kal0050  mbr0025  nma0008	rzb0069  tlb0046  zzl0056
+atv0005  cew0060  dss0024  hkd0007  jhf0017  kal0065  mbs0017  nmc0011	rzc0018  tld0021  zzl0077
+atw0019  cew0086  dss0025  hkf0008  jhh0017  kam0126  mbs0022  nmd0005	rzc0032  tlg0010  zzl0084
+atw0049  cfg0009  dst0004  hkf0010  jhh0021  kan0010  mbw0040  nmf0014	rzc0047  tlp0027  zzm0010
+avb0013  cfg0010  dst0009  hkg0005  jhh0049  kap0055  mcb0065  nmh0020	rzh0022  tlr0026  zzm0014
+avb0017  cfj0004  dtb0024  hkh0020  jhh0050  kar0035  mcb0070  nml0004	rzh0023  tls0016  zzn0003
+avb0018  cfm0010  dtb0026  hkm0006  jhj0011  kar0044  mcb0079  nmp0009	rzh0027  tls0040  zzn0009
+avc0010  cfv0003  dtj0003  hkm0018  jhk0017  kar0056  mcc0059  nmp0015	rzh0051  tlw0036  zzp0008
+avg0013  cga0014  dtm0013  hkn0002  jhl0014  kas0111  mcc0076  nms0020	rzh0053  tma0014  zzs0018
+awa0008  cgc0012  dto0005  hkw0011  jhl0029  kat0066  mcc0079  nmt0003	rzh0056  tmc0058  zzw0035
+awb0036  cgc0027  dtr0005  hlc0019  jhl0033  kaw0075  mcd0031  nna0001	rzj0017  tmg0037  zzw0039
+awc0004  cgd0010  dvb0005  hlh0025  jhm0015  kaw0094  mcd0048  nnw0006	rzj0027  tmg0043  zzw0048
+awd0012  cgd0014  dvd0002  hlh0036  jhp0037  kaw0100  mce0010  nod0001	rzl0047  tmh0064  zzw0053
+awg0017  cgf0009  dvr0003  hll0002  jhr0022  kaw0115  mcg0040  npe0004	rzm0051  tmj0015  zzw0059
+awh0008  cgg0011  dwb0025  hll0008  jhr0025  kbd0014  mcg0045  nph0008	rzm0052  tmj0027  zzw0061
+aww0009  cgh0021  dwb0026  hls0019  jhr0029  kbg0015  mch0048  npm0013	rzm0073  tmk0012  zzw0071
+aww0014  cgh0029  dwc0006  hlw0032  jhs0024  kbj0009  mch0052  nps0014	rzn0034  tml0010  zzx0019
+aww0021  cgh0039  dwf0008  hmb0019  jhs0032  kbl0008  mch0067  nrf0009	rzo0002  tmm0034  zzy0016
+aza0092  cgj0011  dwj0001  hmb0038  jhs0033  kbl0013  mch0082  nrh0021	rzs0045  tmn0008  zzy0029
+aza0095  cgj0016  dwj0004  hmb0043  jht0023  kbr0011  mcl0020  nrl0014	rzs0064  tmn0012  zzz0055
+aza0115  cgm0026  dwr0005  hmc0012  jic0009  kbr0016  mcl0028  nrp0007	rzs0075  tmo0006  zzz0063
+aza0117  cgm0044  dwr0015  hmc0031  jij0002  kbr0019  mcl0058  nrr0008	rzs0078  tmo0008  zzz0072
+aza0121  cgm0049  dws0024  hmd0014  jil0003  kbw0020  mcl0060  nrw0012	rzs0085  tmr0027  zzz0079
+aza0138  cgn0005  dws0028  hmd0018  jim0006  kbw0023  mcm0060  nsl0006	rzs0086  tms0049  zzz0080
+aza0150  cgt0015  dzd0027  hmh0045  jim0012  kbw0031  mcm0061  nsm0014	rzs0100  tms0062  zzz0100
+aza0152  cgw0014  dzd0028  hmh0057  jir0004  kbw0032  mcm0086  nst0003	rzv0011  tmw0025
+bash-4.2$ cd ahg[K[Ksjh[K[K[Kjh0067
+bash-4.2$ ls
+commands.script  comp3500  libgit2  ntuser.cmd	temp  typescript
+bash-4.2$ cd som[K[K[Kcomp3500
+bash-4.2$ ls
+commands2.script  commands4.script  helloworld	 interrupts.txt  meminfo.txt  simple.c
+commands3.script  cpuinfo.txt	    hellworld.c  lspci.txt	 simple
+bash-4.2$ gti status
+bash: gti: command not found
+bash-4.2$ git status
+# On branch master
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	.gdbinit
+#	.simple.c.swp
+#	commands2.script
+#	commands3.script
+#	commands4.script
+#	cpuinfo.txt
+#	helloworld
+#	interrupts.txt
+#	lspci.txt
+#	meminfo.txt
+#	simple
+nothing added to commit but untracked files present (use "git add" to track)
+bash-4.2$ git diff
+[?1h=[K[?1l>bash-4.2$ git log
+[?1h=commit dd69a4e7052a0b1af3e8e9adf55c78176c48fa3c[m
+Author: Alan J Hancher <ajh0067@tux058.eng.auburn.edu>[m
+Date:   Fri Aug 31 11:10:51 2018 -0500[m
+[m
+    first git commit[m
+[K[?1l>bash-4.2$ exit
+exit
+
+Script done on Fri 31 Aug 2018 11:15:40 AM CDT
